@@ -90,59 +90,34 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12">
+                    <div class="col-md-4">
                         <!-- About -->
                         <div class="single-widget about">
                             <div class="logo"><a href="#"><img src="vendor/learnedu/images/logo2.png" alt="#"></a></div>
                             <p>Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Lorem ipsum dolor sit amet, consectetur</p>
                             <ul class="list">
-                                <li><i class="fa fa-phone"></i>Phone: +123 456-7890 </li>
-                                <li><i class="fa fa-envelope"></i>Email: <a href="mailto:info@youremail.com">Info@youremail.com</a></li>
-                                <li><i class="fa fa-map-o"></i>Address: 211 Ronad, California, Us</li>
+                                <li><i class="fa fa-phone"></i>Phone: +88 01719 541 589 </li>
+                                <li><i class="fa fa-envelope"></i>Email: <a href="mailto:info@sunflowerkg.com">info@sunflowerkg.com</a></li>
+                                <li><i class="fa fa-map-o"></i>নেকমরদ, রানীশংকৈল, ঠাকুরগাঁও</li>
                             </ul>
                         </div>
                         <!--/ End About -->
                     </div>
-                    <div class="col-lg-2 col-md-6 col-12">
+                    <div class="col-md-4">
                         <!-- Useful Links -->
                         <div class="single-widget useful-links">
                             <h2>Useful Links</h2>
                             <ul>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Home</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>About Us</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Courses</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Events</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Blogs</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Contact</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>নীড় পাতা</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>আমাদের সম্পর্কে</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>শিক্ষকবৃন্দ</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>নোটিশ</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>যোগাযোগ</a></li>
                             </ul>
                         </div>
                         <!--/ End Useful Links -->
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <!-- Latest News -->
-                        <div class="single-widget latest-news">
-                            <h2>Latest Posts</h2>
-                            <div class="news-inner">
-                                <div class="single-news">
-                                    <img src="vendor/learnedu/images/blog/blog1.jpg" alt="#">
-                                    <h4><a href="blog-single.html">Our Teacher the best Link to Savc</a></h4>
-                                    <p>Nunc purus orci, blandit condimentum rhoncus vels</p>
-                                </div>
-                                <div class="single-news">
-                                    <img src="vendor/learnedu/images/blog/blog2.jpg" alt="#">
-                                    <h4><a href="blog-single.html">Student Have the best Link to Ronae</a></h4>
-                                    <p>Nunc purus orci, blandit condimentum rhoncus vels</p>
-                                </div>
-                                <div class="single-news">
-                                    <img src="vendor/learnedu/images/blog/blog3.jpg" alt="#">
-                                    <h4><a href="blog-single.html">Sekker the best Link to build</a></h4>
-                                    <p>Nunc purus orci, blandit condimentum rhoncus vele</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ End Latest News -->
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
+                    <div class="col-md-4">
                         <!-- Newsletter -->
                         <div class="single-widget newsletter">
                             <h2>Subscribe Newsletter</h2>
@@ -172,14 +147,13 @@
                                     <ul class="social">
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                                     </ul>
                                     <!-- End Social -->
                                     <!-- Copyright -->
                                     <div class="copyright">
-                                        <p>© Copyright 2018 <a href="#">LearnEdu</a>. All Rights Reserved</p>
+                                        <p>© Copyright Reserved {{ date('Y') }}. Developed with ❤️ by <a href="http://orbachinujbuk.com/" target="_blank">A. H. M. Azimul Haque</a>.</p>
                                     </div>
                                     <!--/ End Copyright -->
                                 </div>

@@ -11,7 +11,7 @@
                             <p>Our mission is to empower clients, colleagues, and communities to achieve aspirations while building lasting, caring relationships.</p>
                             <div class="button">
                                 <a href="courses.html" class="btn primary">Our Courses</a>
-                                <a href="about.html" class="btn">About Learnedu</a>
+                                <a href="about.html" class="btn">About Test</a>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                             <p>Our mission is to empower clients, colleagues, and communities to achieve aspirations while building lasting, caring relationships.</p>
                             <div class="button">
                                 <a href="courses.html" class="btn primary">Our Courses</a>
-                                <a href="about.html" class="btn">About Learnedu</a>
+                                <a href="about.html" class="btn">About Test</a>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                             <p>Our mission is to empower clients, colleagues, and communities to achieve aspirations while building lasting, caring relationships.</p>
                             <div class="button">
                                 <a href="courses.html" class="btn primary">Our Courses</a>
-                                <a href="about.html" class="btn">About Learnedu</a>
+                                <a href="about.html" class="btn">About Test</a>
                             </div>
                         </div>
                     </div>

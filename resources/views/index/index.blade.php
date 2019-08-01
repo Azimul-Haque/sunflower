@@ -249,9 +249,9 @@
     			<div class="col-lg-3 col-md-6 col-6 wow zoomIn" data-wow-delay="0.4s">
     				<!-- Single Fact -->
     				<div class="single-fact">
-    					<i class="fa fa-institution"></i>
-    					<div class="number"><span class="counter">80</span>k+</div>
-    					<p>Active Cources</p>
+    					<i class="fa fa-users"></i>
+    					<div class="number"><span class="counter">500</span>+</div>
+    					<p>বর্তমান শিক্ষার্থী</p>
     				</div>
     				<!--/ End Single Fact -->
     			</div>
@@ -259,17 +259,8 @@
     				<!-- Single Fact -->
     				<div class="single-fact">
     					<i class="fa fa-graduation-cap"></i>
-    					<div class="number"><span class="counter">33</span>k+</div>
-    					<p>Active Students</p>
-    				</div>
-    				<!--/ End Single Fact -->
-    			</div>
-    			<div class="col-lg-3 col-md-6 col-6 wow zoomIn" data-wow-delay="0.8s">
-    				<!-- Single Fact -->
-    				<div class="single-fact">
-    					<i class="fa fa-video-camera"></i>
-    					<div class="number"><span class="counter">278</span>+</div>
-    					<p>Video Cources</p>
+    					<div class="number"><span class="counter">2000</span>+</div>
+    					<p>উত্তীর্ণ শিক্ষার্থী</p>
     				</div>
     				<!--/ End Single Fact -->
     			</div>
@@ -277,8 +268,17 @@
     				<!-- Single Fact -->
     				<div class="single-fact">
     					<i class="fa fa-trophy"></i>
-    					<div class="number"><span class="counter">308</span>+</div>
-    					<p>Awards Won</p>
+    					<div class="number"><span class="counter">300</span>+</div>
+    					<p>বৃত্তিপ্রাপ্ত</p>
+    				</div>
+    				<!--/ End Single Fact -->
+    			</div>
+    			<div class="col-lg-3 col-md-6 col-6 wow zoomIn" data-wow-delay="0.8s">
+    				<!-- Single Fact -->
+    				<div class="single-fact">
+    					<i class="fa fa-address-book-o"></i>
+    					<div class="number"><span class="counter">25</span>+</div>
+    					<p>অভিজ্ঞ শিক্ষক</p>
     				</div>
     				<!--/ End Single Fact -->
     			</div>
