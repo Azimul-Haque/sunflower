@@ -14,15 +14,8 @@ use App\Event;
 use App\Notice;
 use App\Basicinfo;
 use App\Formmessage;
-use App\Payment;
-use App\Paymentreceipt;
 use App\Faq;
-use App\Committee;
-use App\Donor;
-use App\Donation;
-use App\Branch;
-use App\Branchpayment;
-use App\Tempmemdata;
+use App\Staff;
 
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
@@ -63,77 +56,8 @@ class DashboardController extends Controller
         // $ataglance = About::where('type', 'ataglance')->get()->first();
         // $membership = About::where('type', 'membership')->get()->first();
         // $basicinfo = Basicinfo::where('id', 1)->first();
-        $totalpending = DB::table('payments')
-                           ->select(DB::raw('SUM(amount) as totalamount'))
-                           ->where('payment_status', '=', 0)
-                           ->where('is_archieved', '=', 0)
-                           // ->where(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"), "=", Carbon::now()->format('Y-m'))
-                           // ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"))
-                           ->first();
-        $totalapproved = DB::table('payments')
-                           ->select(DB::raw('SUM(amount) as totalamount'))
-                           ->where('payment_status', '=', 1)
-                           ->where('is_archieved', '=', 0)
-                           // ->where(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"), "=", Carbon::now()->format('Y-m'))
-                           // ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"))
-                           ->first();
-        $registeredmember = User::where('activation_status', 1)
-                                ->where('role_type', '!=', 'admin')                
-                                ->count();
-
-        $pendingpayments = Payment::where('payment_status', 0)
-                                      ->where('is_archieved', 0)
-                                      ->count() 
-                                      +
-                           User::where('activation_status', 0)
-                               ->orWhere('activation_status', 202)
-                               ->count();
-
-        $successfullpayments = Payment::where('payment_status', 1)->count();
-
-        $totalapplicationpending = DB::table('users')
-                                     ->select(DB::raw('SUM(application_payment_amount) as totalamount'))
-                                     ->where('activation_status', '=', 0)
-                                     // ->where(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"), "=", Carbon::now()->format('Y-m'))
-                                     // ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"))
-                                     ->first();
-
-        $totaldonation = DB::table('donations')
-                                ->select(DB::raw('SUM(amount) as totalamount'))
-                                ->where('payment_status', 1)
-                                ->first();
-        $totaldonors = Donor::count();
-
-        $totalbranchpayment = DB::table('branchpayments')
-                                ->select(DB::raw('SUM(amount) as totalamount'))
-                                ->where('payment_status', 1)
-                                ->first();
-        $totalbranches = Branch::count();
-
-        $lastsixmembers = User::where('activation_status', 1)
-                              ->where('role', 'member')
-                              ->orderBy('updated_at', 'desc')
-                              ->take(6)->get();
-
-        $lastsevenmonthscollection = DB::table('payments')
-                                    ->select('created_at', DB::raw('SUM(amount) as totalamount'))
-                                    ->where('is_archieved', '=', 0)
-                                    ->where('payment_status', '=', 1)
-                                    ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"))
-                                    ->orderBy('created_at', 'DESC')
-                                    ->take(12)
-                                    ->get();
-        $monthsforchartc = [];
-        foreach ($lastsevenmonthscollection as $key => $months) {
-            $monthsforchartc[] = date_format(date_create($months->created_at), "M Y");
-        }
-        $monthsforchartc = json_encode(array_reverse($monthsforchartc));
-
-        $totalsforchartc = [];
-        foreach ($lastsevenmonthscollection as $key => $months) {
-            $totalsforchartc[] = $months->totalamount;
-        }
-        $totalsforchartc = json_encode(array_reverse($totalsforchartc));
+        
+        
 
         // $bangla_date = new BanglaDate(strtotime(date('d-m-Y')), 0);
 
@@ -141,41 +65,14 @@ class DashboardController extends Controller
 
         // $datebangla =  $bangla_output[1] . ' ' . $bangla_output[0]  . ', ' . $bangla_output[2];
 
-        return view('dashboard.index')
-                    ->withTotalpending($totalpending)
-                    ->withTotalapproved($totalapproved)
-                    ->withRegisteredmember($registeredmember)
-                    ->withPendingpayments($pendingpayments)
-                    ->withSuccessfullpayments($successfullpayments)
-                    ->withLastsixmembers($lastsixmembers)
-                    ->withMonthsforchartc($monthsforchartc)
-                    ->withTotalsforchartc($totalsforchartc)
-                    ->withTotaldonation($totaldonation)
-                    ->withTotaldonors($totaldonors)
-                    ->withTotalbranchpayment($totalbranchpayment)
-                    ->withTotalbranches($totalbranches)
-                    ->withTotalapplicationpending($totalapplicationpending);
+        return view('dashboard.index');
     }
 
     public function getAdmins()
     {
-        $superadmins = User::where('role', 'admin')
-                           ->whereNotIn('email', ['mannan@cvcsbd.com', 'dataentry@cvcsbd.com']) // jei email gula deoa hobe tader k dekhabe na!!!
-                           ->where('role_type', 'admin')
-                           ->paginate(10);
+        $admins = User::where('role', 'admin')->paginate(10);
 
-        $admins = User::where('role', 'admin')
-                      ->where('role_type', 'manager')
-                      ->paginate(10);
-        // $whoweare = About::where('type', 'whoweare')->get()->first();
-        // $whatwedo = About::where('type', 'whatwedo')->get()->first();
-        // $ataglance = About::where('type', 'ataglance')->get()->first();
-        // $membership = About::where('type', 'membership')->get()->first();
-        // $basicinfo = Basicinfo::where('id', 1)->first();
-
-        return view('dashboard.adminsandothers.admins')
-                    ->withSuperadmins($superadmins)
-                    ->withAdmins($admins);
+        return view('dashboard.adminsandothers.admins')->withAdmins($admins);
     }
 
     public function getCreateAdmin()
@@ -191,10 +88,8 @@ class DashboardController extends Controller
         //                 ->orWhere('name', 'like', '%' . $request->searchentry . '%')
         //                 ->orWhere('mobile', 'like', '%' . $request->searchentry . '%')
         //                 ->get();
-        $response = User::select('name_bangla', 'member_id', 'mobile')
-                        ->where('role_type', '!=', 'admin')
-                        ->where('role_type', '!=', 'manager')
-                        ->where('activation_status', 1)
+        $response = User::select('name', 'mobile')
+                        ->where('role', 'admin')
                         ->orderBy('id', 'desc')->get();
 
         return $response;          
@@ -203,13 +98,19 @@ class DashboardController extends Controller
     public function addAdmin(Request $request)
     {
         $this->validate($request,array(
-            'member_id' => 'required'
+            'name'        => 'required',
+            'mobile'       => 'required|max:11|unique:users,mobile',
+            'email'       => 'sometimes|email|unique:users,email',
+            'password'    => 'required'
         ));
 
-        $member = User::where('member_id', $request->member_id)->first();
-        $member->role      = 'admin';
-        $member->role_type = 'manager';
-        $member->save();
+        $admin = new User;
+        $admin->role      = 'admin';
+        $admin->name      = $request->name;
+        $admin->email     = $request->email;
+        $admin->mobile    = $request->mobile;
+        $admin->password    = Hash::make($request->password);
+        $admin->save();
 
         Session::flash('success', 'সফলভাবে অ্যাডমিন বানানো হয়েছে!');
         return redirect()->route('dashboard.admins');
@@ -550,7 +451,6 @@ class DashboardController extends Controller
             'email'        => 'required',
             'fb'           => 'sometimes',
             'twitter'      => 'sometimes',
-            'gplus'        => 'sometimes',
             'ytube'        => 'sometimes',
             'linkedin'     => 'sometimes'
         ));
@@ -561,7 +461,6 @@ class DashboardController extends Controller
         $basicinfo->email = $request->email;
         $basicinfo->fb = $request->fb;
         $basicinfo->twitter = $request->twitter;
-        $basicinfo->gplus = $request->gplus;
         $basicinfo->ytube = $request->ytube;
         $basicinfo->linkedin = $request->linkedin;
      
@@ -571,101 +470,112 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.abouts');
     }
 
-    public function getCommittee()
+    public function getStaff()
     {
-        $committeemembers = Committee::orderBy('committee_type', 'desc')
-                                     ->orderBy('serial', 'asc')->get();
-        return view('dashboard.committee')->withCommitteemembers($committeemembers);
+        $teachers = Staff::orderBy('serial', 'asc')->get();
+        return view('dashboard.staff')->withTeachers($teachers);
     }
 
-    public function storeCommittee(Request $request)
+    public function storeStaff(Request $request)
     {
         $this->validate($request,array(
             'name'                      => 'required|max:255',
-            'email'                     => 'required|email',
+            'email'                     => 'sometimes|email',
             'phone'                     => 'required|numeric',
             'designation'               => 'required|max:255',
+            'description'               => 'required|max:255',
             'fb'                        => 'sometimes|max:255',
             'twitter'                   => 'sometimes|max:255',
             'linkedin'                  => 'sometimes|max:255',
             'image'                     => 'sometimes|image|max:500',
-            'committee_type'            => 'required',
-            'serial'                    => 'required'
+            'communication_skill'       => 'required',
+            'experience_skill'          => 'required',
+            'serial'                    => 'required',
+            'staff_type'                => 'required'
         ));
 
-        $committeemember = new Committee();
-        $committeemember->committee_type = $request->committee_type;
-        $committeemember->name = $request->name;
-        $committeemember->email = $request->email;
-        $committeemember->phone = $request->phone;
-        $committeemember->designation = $request->designation;
-        $committeemember->fb = htmlspecialchars(preg_replace("/\s+/", " ", $request->fb));
-        $committeemember->twitter = htmlspecialchars(preg_replace("/\s+/", " ", $request->twitter));
-        $committeemember->linkedin = htmlspecialchars(preg_replace("/\s+/", " ", $request->linkedin));
-        $committeemember->serial = $request->serial;
+        $staff = new Staff();
+        $staff->staff_type = $request->staff_type;
+        $staff->name = $request->name;
+        $staff->email = $request->email;
+        $staff->phone = $request->phone;
+        $staff->designation = $request->designation;
+        $staff->description = $request->description;
+        $staff->fb = htmlspecialchars(preg_replace("/\s+/", " ", $request->fb));
+        $staff->twitter = htmlspecialchars(preg_replace("/\s+/", " ", $request->twitter));
+        $staff->linkedin = htmlspecialchars(preg_replace("/\s+/", " ", $request->linkedin));
+        $staff->communication_skill = $request->communication_skill;
+        $staff->experience_skill = $request->experience_skill;
+        $staff->serial = $request->serial;
         
         // image upload
         if($request->hasFile('image')) {
             $image      = $request->file('image');
             $filename   = 'member_' . time() .'.' . $image->getClientOriginalExtension();
-            $location   = public_path('/images/committee/'. $filename);
-            Image::make($image)->resize(250, 250)->save($location);
-            $committeemember->image = $filename;
+            $location   = public_path('/images/staff/'. $filename);
+            Image::make($image)->resize(300, 300)->save($location);
+            $staff->image = $filename;
         }
 
-        $committeemember->save();
+        $staff->save();
         
         Session::flash('success', 'সফলভাবে সংরক্ষণ করা হয়েছে!');
-        return redirect()->route('dashboard.committee');
+        return redirect()->route('dashboard.staff');
     }
 
-    public function updateCommittee(Request $request, $id) {
+    public function updateStaff(Request $request, $id) {
         $this->validate($request,array(
             'name'                      => 'required|max:255',
-            'email'                     => 'required|email',
+            'email'                     => 'sometimes|email',
             'phone'                     => 'required|numeric',
             'designation'               => 'required|max:255',
+            'description'               => 'required|max:255',
             'fb'                        => 'sometimes|max:255',
             'twitter'                   => 'sometimes|max:255',
             'linkedin'                  => 'sometimes|max:255',
-            'image'                     => 'sometimes|image|max:250',
-            'committee_type'            => 'required',
-            'serial'                    => 'required'
+            'image'                     => 'sometimes|image|max:500',
+            'communication_skill'       => 'required',
+            'experience_skill'          => 'required',
+            'serial'                    => 'required',
+            'staff_type'                => 'required'
         ));
 
-        $committeemember = Committee::find($id);
-        $committeemember->committee_type = $request->committee_type;
-        $committeemember->name = $request->name;
-        $committeemember->email = $request->email;
-        $committeemember->phone = $request->phone;
-        $committeemember->designation = $request->designation;
-        $committeemember->fb = htmlspecialchars(preg_replace("/\s+/", " ", $request->fb));
-        $committeemember->twitter = htmlspecialchars(preg_replace("/\s+/", " ", $request->twitter));
-        $committeemember->linkedin = htmlspecialchars(preg_replace("/\s+/", " ", $request->linkedin));
-        $committeemember->serial = $request->serial;
+        $staff = Staff::find($id);
+        $staff->staff_type = $request->staff_type;
+        $staff->name = $request->name;
+        $staff->email = $request->email;
+        $staff->phone = $request->phone;
+        $staff->designation = $request->designation;
+        $staff->description = $request->description;
+        $staff->fb = htmlspecialchars(preg_replace("/\s+/", " ", $request->fb));
+        $staff->twitter = htmlspecialchars(preg_replace("/\s+/", " ", $request->twitter));
+        $staff->linkedin = htmlspecialchars(preg_replace("/\s+/", " ", $request->linkedin));
+        $staff->communication_skill = $request->communication_skill;
+        $staff->experience_skill = $request->experience_skill;
+        $staff->serial = $request->serial;
 
         // image upload
         if($request->hasFile('image')) {
-            $image_path = public_path('/images/committee/'. $committeemember->image);
+            $image_path = public_path('/images/staff/'. $staff->image);
             if(File::exists($image_path)) {
                 File::delete($image_path);
             }
             $image      = $request->file('image');
             $filename   = 'member_' . time() .'.' . $image->getClientOriginalExtension();
-            $location   = public_path('/images/committee/'. $filename);
-            Image::make($image)->resize(250, 250)->save($location);
-            $committeemember->image = $filename;
+            $location   = public_path('/images/staff/'. $filename);
+            Image::make($image)->resize(300, 300)->save($location);
+            $staff->image = $filename;
         }
             
-        $committeemember->save();
+        $staff->save();
         
         Session::flash('success', 'সফলভাবে হালনাগাদ করা হয়েছে!');
-        return redirect()->route('dashboard.committee');
+        return redirect()->route('dashboard.staff');
     }
 
-    public function deleteCommittee($id)
+    public function deleteStaff($id)
     {
-        $committeemember = Committee::find($id);
+        $committeemember = Staff::find($id);
         $image_path = public_path('images/committee/'. $committeemember->image);
         if(File::exists($image_path)) {
             File::delete($image_path);

@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'CVCS | Committee')
+@section('title', 'শিক্ষক ও এমএলএসএস | সানফ্লাওয়ার কেজি অ্যান্ড প্রি-ক্যাডেট স্কুল')
 
 @section('css')
 
@@ -8,9 +8,9 @@
 
 @section('content_header')
     <h1>
-      কমিটির সদস্যগণ
+      শিক্ষক ও এমএলএসএস তালিকা
       <div class="pull-right">
-        <button class="btn btn-success" data-toggle="modal" data-target="#addMemberModal" data-backdrop="static" title="সদস্য যোগ করুন"><i class="fa fa-fw fa-plus" aria-hidden="true"></i></button>
+        <button class="btn btn-success" data-toggle="modal" data-target="#addMemberModal" data-backdrop="static" title="স্টাফ যোগ করুন"><i class="fa fa-fw fa-plus" aria-hidden="true"></i></button>
       </div>
     </h1>
 @stop
@@ -22,7 +22,7 @@
           <tr>
             <th style="width: 20px;">সিরিয়াল</th>
             <th>নাম</th>
-            <th>কমিটি</th>
+            <th>ধরণ</th>
             <th>ইমেইল ও ফোন নম্বর</th>
             <th>পদবি</th>
             <th>ছবি</th>
@@ -31,24 +31,24 @@
         </thead>
         <tbody>
           @php $addmodalflag = 0; $editmodalflag = 0; @endphp
-          @foreach($committeemembers as $member)
+          @foreach($teachers as $member)
           <tr>
             <td>
               {{ bangla($member->serial) }}
             </td>
             <td>{{ $member->name }}</td>
-            <td>{{ $member->email }}<br/>{{ $member->phone }}</td>
             <td>
-              @if($member->committee_type == 0)
-                <span class="badge badge-danger">পূর্বতন কমিটি</span>
+              @if($member->staff_type == 0)
+                <span class="badge badge-danger">শিক্ষক</span>
               @else
-                <span class="badge badge-success">বর্তমান কমিটি</span>
+                <span class="badge badge-success">এমএলএসএস</span>
               @endif
             </td>
+            <td>{{ $member->email }}<br/>{{ $member->phone }}</td>
             <td>{{ $member->designation }}</td>
             <td>
               @if($member->image != null)
-              <img src="{{ asset('images/committee/'.$member->image)}}" style="height: 40px; width: auto;" />
+              <img src="{{ asset('images/staff/'.$member->image)}}" style="height: 40px; width: auto;" />
               @else
               <img src="{{ asset('images/user.png')}}" style="height: 40px; width: auto;" />
               @endif
@@ -65,12 +65,12 @@
                       <h4 class="modal-title">সম্পাদনা করুন</h4>
                     </div>
                     <div class="modal-body">
-                      {!! Form::model($member, ['route' => ['dashboard.updatecommittee', $member->id], 'method' => 'PUT', 'class' => 'form-default', 'enctype' => 'multipart/form-data']) !!}
+                      {!! Form::model($member, ['route' => ['dashboard.updatestaff', $member->id], 'method' => 'PUT', 'class' => 'form-default', 'enctype' => 'multipart/form-data']) !!}
                           <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
                                 {!! Form::label('name', 'নাম') !!}
-                                {!! Form::text('name', null, array('class' => 'form-control', 'placeholder' => 'সদস্যের নাম লিখুন', 'required')) !!}
+                                {!! Form::text('name', null, array('class' => 'form-control', 'placeholder' => 'স্টাফের নাম লিখুন', 'required')) !!}
                               </div>
                             </div>
                             <div class="col-md-6">
@@ -84,7 +84,7 @@
                             <div class="col-md-6">
                               <div class="form-group">
                                 {!! Form::label('email', 'ইমেইল') !!}
-                                {!! Form::email('email', null, array('class' => 'form-control', 'placeholder' => 'ইমেইল এড্রেস লিখুন', 'required')) !!}
+                                {!! Form::email('email', null, array('class' => 'form-control', 'placeholder' => 'ইমেইল এড্রেস লিখুন')) !!}
                               </div>
                             </div>
                             <div class="col-md-6">
@@ -111,7 +111,7 @@
                           <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
-                                {!! Form::label('linkedin', 'Linkedin Url: (optional)') !!}
+                                {!! Form::label('linkedin', 'যোগাযোগের পারদর্শিতা (শতকরায়)') !!}
                                 {!! Form::text('linkedin', null, array('class' => 'form-control', 'placeholder' => 'Linkedin Url')) !!}
                               </div>
                             </div>
@@ -121,6 +121,24 @@
                                 {!! Form::text('serial', null, array('class' => 'form-control', 'placeholder' => 'সিরিয়াল নম্বর (1/2/3 ইত্যাদি)', 'required')) !!}
                               </div>
                             </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                {!! Form::label('communication_skill', 'যোগাযোগের পারদর্শিতা (শতকরায়)') !!}
+                                {!! Form::number('communication_skill', null, array('class' => 'form-control', 'placeholder' => 'যোগাযোগের পারদর্শিতা', 'required')) !!}
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                {!! Form::label('experience_skill', 'অভিজ্ঞতা (শতকরা)') !!}
+                                {!! Form::number('experience_skill', null, array('class' => 'form-control', 'placeholder' => 'অভিজ্ঞতা', 'required')) !!}
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            {!! Form::label('description', 'বিবরণ') !!}
+                            {!! Form::textarea('description', null, array('class' => 'form-control textarea', 'placeholder' => 'বিবরণ', 'required')) !!}
                           </div>
                           <div class="row">
                             <div class="col-md-6">
@@ -141,11 +159,11 @@
                             </div>
                             <div class="col-md-6">
                               <div class="form-group">
-                                {!! Form::label('committee_type', 'কমিটির ধরণ') !!}
-                                <select class="form-control" name="committee_type" required="">
-                                  <option selected="" disabled="">কমিটির ধরণ নির্ধারণ করুন</option>
-                                  <option value="0" @if($member->committee_type == 0) selected="" @endif>পূর্বতন কমিটি</option>
-                                  <option value="1" @if($member->committee_type == 1) selected="" @endif>বর্তমান কমিটি</option>
+                                {!! Form::label('staff_type', 'স্টাফের ধরণ') !!}
+                                <select class="form-control" name="staff_type" required="">
+                                  <option selected="" disabled="">স্টাফের ধরণ নির্ধারণ করুন</option>
+                                  <option value="0" @if($member->staff_type == 0) selected="" @endif>শিক্ষক</option>
+                                  <option value="1" @if($member->staff_type == 1) selected="" @endif>এমএলএসএস</option>
                                 </select>
                               </div>
                             </div>
@@ -215,13 +233,13 @@
                   <div class="modal-content">
                     <div class="modal-header modal-header-danger">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">সদস্য মুছে ফেলুনr</h4>
+                      <h4 class="modal-title">স্টাফ মুছে ফেলুন</h4>
                     </div>
                     <div class="modal-body">
                       আপনি কী নিশ্চিতভাবে <b>{{ $member->name }}</b>-কে মুছে ফেলতে চান?
                     </div>
                     <div class="modal-footer">
-                      {!! Form::model($member, ['route' => ['dashboard.deletecommittee', $member->id], 'method' => 'DELETE', 'class' => 'form-default', 'enctype' => 'multipart/form-data']) !!}
+                      {!! Form::model($member, ['route' => ['dashboard.deletestaff', $member->id], 'method' => 'DELETE', 'class' => 'form-default', 'enctype' => 'multipart/form-data']) !!}
                           {!! Form::submit('মুছুন', array('class' => 'btn btn-danger')) !!}
                           <button type="button" class="btn btn-default" data-dismiss="modal">ফিরে যান</button>
                       {!! Form::close() !!}
@@ -246,15 +264,15 @@
         <div class="modal-content">
           <div class="modal-header modal-header-success">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">সদস্য ফরম</h4>
+            <h4 class="modal-title">স্টাফ যোগ ফরম</h4>
           </div>
           <div class="modal-body">
-            {!! Form::open(['route' => 'dashboard.storecommittee', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+            {!! Form::open(['route' => 'dashboard.storestaff', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
                       {!! Form::label('name', 'নাম') !!}
-                      {!! Form::text('name', null, array('class' => 'form-control', 'placeholder' => 'সদস্যের নাম লিখুন', 'required')) !!}
+                      {!! Form::text('name', null, array('class' => 'form-control', 'placeholder' => 'স্টাফের নাম লিখুন', 'required')) !!}
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -268,7 +286,7 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       {!! Form::label('email', 'ইমেইল') !!}
-                      {!! Form::email('email', null, array('class' => 'form-control', 'placeholder' => 'ইমেইল এড্রেস লিখুন', 'required')) !!}
+                      {!! Form::email('email', null, array('class' => 'form-control', 'placeholder' => 'ইমেইল এড্রেস লিখুন (থাকলে)')) !!}
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -282,13 +300,13 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       {!! Form::label('fb', 'FB Url: (optional)') !!}
-                      {!! Form::text('fb', null, array('class' => 'form-control', 'placeholder' => 'Facebook Url')) !!}
+                      {!! Form::text('fb', null, array('class' => 'form-control', 'placeholder' => 'Facebook Url (থাকলে)')) !!}
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       {!! Form::label('twitter', 'Twitter Url: (optional)') !!}
-                      {!! Form::text('twitter', null, array('class' => 'form-control', 'placeholder' => 'Twitter Url')) !!}
+                      {!! Form::text('twitter', null, array('class' => 'form-control', 'placeholder' => 'Twitter Url (থাকলে)')) !!}
                     </div>
                   </div>
                 </div>
@@ -296,15 +314,33 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       {!! Form::label('linkedin', 'Linkedin Url: (optional)') !!}
-                      {!! Form::text('linkedin', null, array('class' => 'form-control', 'placeholder' => 'Linkedin Url')) !!}
+                      {!! Form::text('linkedin', null, array('class' => 'form-control', 'placeholder' => 'Linkedin Url (থাকলে)')) !!}
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       {!! Form::label('serial', 'সিরিয়াল নম্বর (1/2/3 ইত্যাদি)') !!}
-                      {!! Form::text('serial', null, array('class' => 'form-control', 'placeholder' => 'সিরিয়াল নম্বর (1/2/3 ইত্যাদি)')) !!}
+                      {!! Form::text('serial', null, array('class' => 'form-control', 'placeholder' => 'সিরিয়াল নম্বর (1/2/3 ইত্যাদি)', 'required')) !!}
                     </div>
                   </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      {!! Form::label('communication_skill', 'যোগাযোগের পারদর্শিতা (শতকরায়)') !!}
+                      {!! Form::number('communication_skill', null, array('class' => 'form-control', 'placeholder' => 'যোগাযোগের পারদর্শিতা', 'required')) !!}
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      {!! Form::label('experience_skill', 'অভিজ্ঞতা (শতকরা)') !!}
+                      {!! Form::number('experience_skill', null, array('class' => 'form-control', 'placeholder' => 'অভিজ্ঞতা', 'required')) !!}
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  {!! Form::label('description', 'বিবরণ') !!}
+                  {!! Form::textarea('description', null, array('class' => 'form-control textarea', 'placeholder' => 'বিবরণ', 'required')) !!}
                 </div>
                 <div class="row">
                   <div class="col-md-6">
@@ -325,11 +361,11 @@
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      {!! Form::label('committee_type', 'কমিটির ধরণ') !!}
-                      <select class="form-control" name="committee_type" required="">
-                        <option selected="" disabled="">কমিটির ধরণ নির্ধারণ করুন</option>
-                        <option value="0">পূর্বতন কমিটি</option>
-                        <option value="1">বর্তমান কমিটি</option>
+                      {!! Form::label('staff_type', 'স্টাফের ধরণ') !!}
+                      <select class="form-control" name="staff_type" required="">
+                        <option selected="" disabled="">স্টাফের ধরণ নির্ধারণ করুন</option>
+                        <option value="0">শিক্ষক</option>
+                        <option value="1">এমএলএসএস</option>
                       </select>
                     </div>
                   </div>

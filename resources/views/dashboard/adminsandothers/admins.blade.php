@@ -10,55 +10,20 @@
     <h1>
       অ্যাডমিনগণ
       <div class="pull-right">
-        @if(Auth::user()->role_type == 'admin')
         <a class="btn btn-success" href="{{ route('dashboard.createadmin') }}" title="অ্যাডমিন যোগ করুন"><i class="fa fa-fw fa-plus" aria-hidden="true"></i></a>
-        @endif
       </div>
     </h1>
 @stop
 
 @section('content')
-  @if(Auth::user()->role_type == 'admin')
-  <h4>সুপার অ্যাডমিনগণ</h4>
-  <div class="table-responsive">
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>নাম</th>
-          <th>যোগাযোগ</th>
-          <th>ছবি</th>
-        </tr>
-      </thead>
-      <tbody>
-        @foreach($superadmins as $superadmin)
-        <tr>
-          <td>
-            {{ $superadmin->name_bangla }}<br/>{{ $superadmin->name }}
-          </td>
-          <td>{{ $superadmin->mobile }}<br/>{{ $superadmin->email }}</td>
-          <td>
-            @if($superadmin->image != null)
-              <img src="{{ asset('images/users/'.$superadmin->image)}}" style="height: 50px; width: auto;" />
-            @else
-              <img src="{{ asset('images/user.png')}}" style="height: 50px; width: auto;" />
-            @endif
-          </td>
-        </tr>
-        @endforeach
-      </tbody>
-    </table>
-  </div>
-
-
   <h4>অ্যাডমিনগণ</h4>
   <div class="table-responsive">
     <table class="table table-bordered">
       <thead>
         <tr>
           <th>নাম</th>
-          <th>মেম্বার আইডি</th>
           <th>যোগাযোগ</th>
-          <th>অফিস তথ্য</th>
+          <th>ইমেইল</th>
           <th>ছবি</th>
           <th width="10%">Action</th>
         </tr>
@@ -67,13 +32,10 @@
         @foreach($admins as $admin)
         <tr>
           <td>
-            <a href="{{ route('dashboard.singlemember', $admin->unique_key) }}" title="সদস্য তথ্য দেখুন">
-              {{ $admin->name_bangla }}<br/>{{ $admin->name }}
-            </a>
+            {{ $admin->name }}
           </td>
-          <td><big><b>{{ $admin->member_id }}</b></big></td>
-          <td>{{ $admin->mobile }}<br/>{{ $admin->email }}</td>
-          <td>{{ $admin->office }}<br/>{{ $admin->profession }} ({{ $admin->designation }})</td>
+          <td>{{ $admin->mobile }}</td>
+          <td>{{ $admin->email }}</td>
           <td>
             @if($admin->image != null)
               <img src="{{ asset('images/users/'.$admin->image)}}" style="height: 50px; width: auto;" />
@@ -82,8 +44,8 @@
             @endif
           </td>
           <td>
-            <a class="btn btn-sm btn-success" href="{{ route('dashboard.singlemember', $admin->unique_key) }}" title="সদস্য তথ্য দেখুন"><i class="fa fa-eye"></i></a>
-            <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#removeAdmin{{ $admin->id }}" data-backdrop="static" title="অ্যাডমিন থেকে অব্যহতি দিন"><i class="fa fa-trash-o"></i></button>
+            <a class="btn btn-sm btn-success" href="#" title="সদস্য তথ্য দেখুন"><i class="fa fa-eye"></i></a>
+            <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#removeAdmin{{ $admin->id }}" data-backdrop="static" title="অ্যাডমিন থেকে অব্যহতি দিন" disabled=""><i class="fa fa-trash-o"></i></button>
             <!-- Remove Admin Modal -->
             <!-- Remove Admin Modal -->
             <div class="modal fade" id="removeAdmin{{ $admin->id }}" role="dialog">
@@ -114,10 +76,6 @@
     </table>
   </div>
   {{ $admins->links() }}
-
-  @else
-    <span class="text-red"><i class="fa fa-exclamation-triangle"></i> দুঃখিত, আপনার এই পাতাটি দেখবার অনুমতি নেই!</span>
-  @endif
 @stop
 
 @section('js')

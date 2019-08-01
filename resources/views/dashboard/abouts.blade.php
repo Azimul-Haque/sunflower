@@ -38,10 +38,6 @@
                 {!! Form::text('twitter', null, array('class' => 'form-control text-blue', 'placeholder' => 'Write Twitter Page Url (Optional)')) !!}
               </div>
               <div class="input-group form-group">
-                <span class="input-group-addon"><i class="fa fa-google-plus"></i></span>
-                {!! Form::text('gplus', null, array('class' => 'form-control text-blue', 'placeholder' => 'Write Google Plus Page Url (Optional)')) !!}
-              </div>
-              <div class="input-group form-group">
                 <span class="input-group-addon"><i class="fa fa-youtube"></i></span>
                 {!! Form::text('ytube', null, array('class' => 'form-control text-blue', 'placeholder' => 'Write YouTube Channel Url (Optional)')) !!}
               </div>

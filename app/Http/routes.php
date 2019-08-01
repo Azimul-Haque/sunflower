@@ -101,10 +101,10 @@ Route::post('/dashboard/bulk/payers/addbulkpayer', ['as'=>'dashboard.addbulkpaye
 Route::patch('/dashboard/bulk/payers/removebulkpayer/{id}', ['as'=>'dashboard.removebulkpayer','uses'=>'DashboardController@removeBulkPayer']);
 
 // COMMITTEE
-Route::get('/dashboard/committee', ['as'=>'dashboard.committee','uses'=>'DashboardController@getCommittee']);
-Route::post('/dashboard/committee', ['as'=>'dashboard.storecommittee','uses'=>'DashboardController@storeCommittee']);
-Route::put('/dashboard/committee/{id}', ['as'=>'dashboard.updatecommittee','uses'=>'DashboardController@updateCommittee']);
-Route::delete('/dashboard/committee/{id}', ['as'=>'dashboard.deletecommittee','uses'=>'DashboardController@deleteCommittee']);
+Route::get('/dashboard/staff', ['as'=>'dashboard.staff','uses'=>'DashboardController@getStaff']);
+Route::post('/dashboard/staff', ['as'=>'dashboard.storestaff','uses'=>'DashboardController@storeStaff']);
+Route::put('/dashboard/staff/{id}', ['as'=>'dashboard.updatestaff','uses'=>'DashboardController@updateStaff']);
+Route::delete('/dashboard/staff/{id}', ['as'=>'dashboard.deletestaff','uses'=>'DashboardController@deleteStaff']);
 
 Route::get('/dashboard/news', ['as'=>'dashboard.news','uses'=>'DashboardController@getNews']);
 
