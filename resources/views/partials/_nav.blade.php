@@ -62,9 +62,9 @@
                 <div class="col-md-8">
                     <div class="logo">
                         @mobile
-                        <a href="/" style="color: #6D6E6A;"><img src="images/logo.png" alt="#" style="width: 40px; height: auto;"> সানফ্লাওয়ার কেজি অ্যান্ড প্রি-ক্যাডেট স্কুল</a>
+                        <a href="/" style="color: #6D6E6A;"><img src="/images/logo.png" alt="#" style="width: 40px; height: auto;"> সানফ্লাওয়ার কেজি অ্যান্ড প্রি-ক্যাডেট স্কুল</a>
                         @elsemobile
-                        <h2><a href="/" style="color: #6D6E6A;"><img src="images/logo.png" alt="#"> সানফ্লাওয়ার কেজি অ্যান্ড প্রি-ক্যাডেট স্কুল</a></h2>
+                        <h2><a href="/" style="color: #6D6E6A;"><img src="/images/logo.png" alt="#"> সানফ্লাওয়ার কেজি অ্যান্ড প্রি-ক্যাডেট স্কুল</a></h2>
                         @endmobile
                     </div>
                     <div class="mobile-menu"></div>

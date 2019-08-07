@@ -93,7 +93,7 @@
                     <div class="col-md-4">
                         <!-- About -->
                         <div class="single-widget about">
-                            <div class="logo"><a href="#"><img src="vendor/learnedu/images/logo2.png" alt="#"></a></div>
+                            <div class="logo"><a href="#"><img src="/vendor/learnedu/images/logo2.png" alt="#"></a></div>
                             <p>Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Lorem ipsum dolor sit amet, consectetur</p>
                             <ul class="list">
                                 <li><i class="fa fa-phone"></i>Phone: +88 01719 541 589 </li>
