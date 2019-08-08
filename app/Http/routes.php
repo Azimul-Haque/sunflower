@@ -18,6 +18,13 @@ Route::get('/clear', ['as'=>'clear','uses'=>'IndexController@clear']);
 // index routes
 Route::get('/', ['as'=>'index.index','uses'=>'IndexController@index']);
 Route::get('/about', ['as'=>'index.about','uses'=>'IndexController@getAbout']);
+Route::get('/history', ['as'=>'index.history','uses'=>'IndexController@getHistory']);
+Route::get('/hamidulhaque', ['as'=>'index.hamidulhaque','uses'=>'IndexController@getHamidulHaque']);
+Route::get('/nazimulhasan', ['as'=>'index.nazimulhasan','uses'=>'IndexController@getNazimulHasan']);
+Route::get('/teachers', ['as'=>'index.teachers','uses'=>'IndexController@getTeachers']);
+Route::get('/mlss', ['as'=>'index.mlss','uses'=>'IndexController@getMLSS']);
+Route::get('/contact', ['as'=>'index.contact','uses'=>'IndexController@getContact']);
+
 Route::get('/mission', ['as'=>'index.mission','uses'=>'IndexController@getMission']);
 Route::get('/business_entitny', ['as'=>'index.business_entitny','uses'=>'IndexController@getBusinessEntity']);
 Route::get('/product_services', ['as'=>'index.product_services','uses'=>'IndexController@getProductServices']);
@@ -34,7 +41,6 @@ Route::get('/event/{id}/single', ['as'=>'index.singleevent','uses'=>'IndexContro
 Route::get('/gallery', ['as'=>'index.gallery','uses'=>'IndexController@getGallery']);
 Route::get('/gallery/{id}/single', ['as'=>'index.gallery.single','uses'=>'IndexController@getSingleGalleryAlbum']);
 Route::get('/members', ['as'=>'index.members','uses'=>'IndexController@getMembers']);
-Route::get('/contact', ['as'=>'index.contact','uses'=>'IndexController@getContact']);
 Route::get('/application', ['as'=>'index.application','uses'=>'IndexController@getApplication']);
 Route::get('/member/login', ['as'=>'index.login','uses'=>'IndexController@getLogin']);
 Route::get('/member/profile/{unique_key}', ['as'=>'index.profile','uses'=>'IndexController@getProfile']);

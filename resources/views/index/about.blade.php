@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    CVCS | আমাদের সম্পর্কে
+    আমাদের সম্পর্কে | সানফ্লাওয়ার কেজি অ্যান্ড প্রি-ক্যাডেট স্কুল
 @endsection
 
 @section('css')
@@ -8,245 +8,91 @@
 @endsection
 
 @section('content')
-    <!-- head section -->
-    <section class="content-top-margin wow fadeInUp">
+    <!-- Start Breadcrumbs -->
+    <section class="breadcrumbs overlay">
         <div class="container">
             <div class="row">
-                <!-- section title -->
-                <div class="col-md-6 col-sm-6 xs-margin-bottom-four">
-                    <span class="text-large letter-spacing-2 black-text font-weight-600 text-uppercase agency-title">সংক্ষিপ্ত ইতিহাস</span>
-                </div>
-                <!-- end section title -->
-                <!-- section highlight text -->
-                <div class="col-md-6 col-sm-6 text-right xs-text-left">
-                    <span class="text-extra-large font-weight-400"></span>
-                </div>
-                <!-- end section highlight text -->
-            </div>
-        </div>
-    </section>
-    <!-- end head section -->
-    <!-- WHATWEDO section -->
-    <section class="wow fadeInUp bg-royal-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <span class="title-large text-uppercase letter-spacing-1 font-weight-600 black-text"></span>
-                    <div class="separator-line-thick bg-fast-pink no-margin-lr"></div>
-                    <p class="white-text about-us-page-text">
-                        {!! $whoweare->text !!}
-                    </p>
-                </div>
-                <div class="col-md-4 xs-display-none">
-                    <center>
-                      <img src="{{ asset('images/whoweare.png') }}" class="img-responsive" style="max-height: 250px;">
-                    </center>
+                <div class="col-12">
+                    <h2>আমাদের সম্পর্কে</h2>
+                    <ul class="bread-list">
+                        <li><a href="/">নীড় পাতা<i class="fa fa-angle-right"></i></a></li>
+                        <li class="active"><a href="#!">আমাদের সম্পর্কে</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="wow fadeInUp">
-        <div class="container">
-            <div class="row">
-                <!-- section highlight text -->
-                <div class="col-md-6 col-sm-6 text-right xs-text-left">
-                    <span class="text-extra-large font-weight-400"></span>
-                </div>
-                <!-- end section highlight text -->
-                <!-- section title -->
-                <div class="col-md-6 col-sm-6 xs-margin-bottom-four text-right">
-                    <span class="text-large letter-spacing-2 black-text font-weight-600 text-uppercase agency-title">আমাদের মিশন</span>
-                </div>
-                <!-- end section title -->
-            </div>
-        </div>
-    </section>
-    <section class="wow fadeInUp bg-royal-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 xs-display-none">
-                    <center>
-                      <img src="{{ asset('images/mission.png') }}" class="img-responsive" style="max-height: 250px;">
-                    </center>
-                </div>
-                <div class="col-md-8">
-                    <span class="title-large text-uppercase letter-spacing-1 font-weight-600 white-text"></span>
-                    <div class="separator-line-thick bg-fast-pink no-margin-lr"></div>
-                    <p class="white-text about-us-page-text">
-                        {!! $mission->text !!}
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--/ End Breadcrumbs -->
     
-
-    {{-- <section class="wow fadeInUp">
+    <!-- About US -->
+    <section class="about-us section">
         <div class="container">
             <div class="row">
-                <!-- section highlight text -->
-                <div class="col-md-6 col-sm-6 text-right xs-text-left">
-                    <span class="text-extra-large font-weight-400"></span>
+                <div class="col-lg-6 col-12">
+                    <div class="single-image overlay">
+                        <img src="{{ asset('/vendor/learnedu/images/about.jpg') }}" alt="#">
+                        <a href="https://www.youtube.com/watch?v=UalTfOIDQ7M" class="btn video-popup mfp-fade"><i class="fa fa-play"></i></a>
+                    </div>
                 </div>
-                <!-- end section highlight text -->
-                <!-- section title -->
-                <div class="col-md-6 col-sm-6 xs-margin-bottom-four text-right">
-                    <span class="text-large letter-spacing-2 black-text font-weight-600 text-uppercase agency-title">আমরা যা করি</span>
-                </div>
-                <!-- end section title -->
-            </div>
-        </div>
-    </section>
-    <section class="wow fadeInUp bg-royal-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 xs-display-none">
-                    <center>
-                      <img src="{{ asset('images/whatwedo.png') }}" class="img-responsive" style="max-height: 250px;">
-                    </center>
-                </div>
-                <div class="col-md-8">
-                    <span class="title-large text-uppercase letter-spacing-1 font-weight-600 white-text"></span>
-                    <div class="separator-line-thick bg-fast-pink no-margin-lr"></div>
-                    <p class="white-text about-us-page-text">
-                        {!! $whoweare->text !!}
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <section class="wow fadeInUp">
-        <div class="container">
-            <div class="row">
-                <!-- section title -->
-                <div class="col-md-6 col-sm-6 xs-margin-bottom-four">
-                    <span class="text-large letter-spacing-2 black-text font-weight-600 text-uppercase agency-title">সদস্যপদ</span>
-                </div>
-                <!-- end section title -->
-                <!-- section highlight text -->
-                <div class="col-md-6 col-sm-6 text-right xs-text-left">
-                    <span class="text-extra-large font-weight-400"></span>
-                </div>
-                <!-- end section highlight text -->
-            </div>
-        </div>
-    </section>
-    <section class="wow fadeInUp bg-royal-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <span class="title-large text-uppercase letter-spacing-1 font-weight-600 black-text"></span>
-                    <div class="separator-line-thick bg-fast-pink no-margin-lr"></div>
-                    <p class="white-text about-us-page-text">
-                        {!! $membership->text !!}
-                    </p>
-                </div>
-                <div class="col-md-4 xs-display-none">
-                    <center>
-                      <img src="{{ asset('images/membership.png') }}" class="img-responsive" style="max-height: 250px;">
-                    </center>
+                <div class="col-lg-6 col-12">
+                    <div class="about-text">
+                        <h2>About Our Education</h2>
+                        <p>As marketing professionals in the experiential world, we have become accusto to the idea of an ever evolving industry. Brands today are moving away from purely face to face physical experiences, and bringing their essence to life, not only through digital immersion creativity but through new technology as well including Virtual Reality.</p>
+                        <p>face physical experiences, and bringing their essence to life, not only through digital immersion creativity but through new technology as well including Virtual Reality As marketing professionals in the experiential world, we have become accusto to the idea of an ever evolving industry. Brands today are moving away from purely face to face physical experiences,</p>
+                        <div class="button">
+                            <a href="#" class="btn">Our Courses</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="wow fadeInUp">
+    <!--/ End About US -->
+    
+    <!-- Fun Facts -->
+    <div class="fun-facts overlay" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row">
-                <!-- section highlight text -->
-                <div class="col-md-6 col-sm-6 text-right xs-text-left">
-                    <span class="text-extra-large font-weight-400"></span>
-                </div>
-                <!-- end section highlight text -->
-                <!-- section title -->
-                <div class="col-md-6 col-sm-6 xs-margin-bottom-four text-right">
-                    <span class="text-large letter-spacing-2 black-text font-weight-600 text-uppercase agency-title">এক নজরে সিভিসিএস</span>
-                </div>
-                <!-- end section title -->
-            </div>
-        </div>
-    </section>
-    <section class="wow fadeInUp bg-royal-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 xs-display-none">
-                    <center>
-                      <img src="{{ asset('images/ataglance.png') }}" class="img-responsive" style="max-height: 250px;">
-                    </center>
-                </div>
-                <div class="col-md-8">
-                    <span class="title-large text-uppercase letter-spacing-1 font-weight-600 black-text"></span>
-                    <div class="separator-line-thick bg-fast-pink no-margin-lr"></div>
-                    <p class="white-text about-us-page-text">
-                        {!! $ataglance->text !!}
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end WHATWEDO section -->
-    <!-- content section -->
-    {{-- <section class="content-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <div class="features-section col-md-12 col-sm-6 no-padding wow fadeInUp" data-wow-duration="300ms">
-                        <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-desktop  medium-icon "></i></div>
-                        <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
-                            <h5>Elegant / Unique design</h5>
-                            <div class="separator-line bg-yellow"></div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
-                        </div>
+                <div class="col-lg-3 col-md-6 col-6 wow zoomIn" data-wow-delay="0.4s">
+                    <!-- Single Fact -->
+                    <div class="single-fact">
+                        <i class="fa fa-users"></i>
+                        <div class="number"><span class="counter">500</span>+</div>
+                        <p>বর্তমান শিক্ষার্থী</p>
                     </div>
-                    <div class="features-section no-margin col-md-12 col-sm-6 no-padding wow fadeInUp" data-wow-duration="1200ms">
-                        <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-target  medium-icon"></i></div>
-                        <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
-                            <h5>True Responsiveness</h5>
-                            <div class="separator-line bg-yellow"></div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
-                        </div>
-                    </div>
+                    <!--/ End Single Fact -->
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="features-section col-md-12 col-sm-6 no-padding wow fadeInUp" data-wow-duration="600ms">
-                        <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-trophy medium-icon"></i></div>
-                        <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
-                            <h5>Parallax Slider</h5>
-                            <div class="separator-line bg-yellow"></div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
-                        </div>
+                <div class="col-lg-3 col-md-6 col-6 wow zoomIn" data-wow-delay="0.6s">
+                    <!-- Single Fact -->
+                    <div class="single-fact">
+                        <i class="fa fa-graduation-cap"></i>
+                        <div class="number"><span class="counter">2000</span>+</div>
+                        <p>উত্তীর্ণ শিক্ষার্থী</p>
                     </div>
-                    <div class="features-section no-margin col-md-12 col-sm-6 no-padding wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-scissors medium-icon"></i></div>
-                        <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
-                            <h5>Lightbox photo Gallery</h5>
-                            <div class="separator-line bg-yellow"></div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
-                        </div>
-                    </div>
+                    <!--/ End Single Fact -->
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="features-section no-bottom-margin col-md-12 col-sm-6 no-padding wow fadeInUp" data-wow-duration="900ms">
-                        <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-hotairballoon medium-icon"></i></div>
-                        <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
-                            <h5>Different Layout Type</h5>
-                            <div class="separator-line bg-yellow"></div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
-                        </div>
+                <div class="col-lg-3 col-md-6 col-6 wow zoomIn" data-wow-delay="1s">
+                    <!-- Single Fact -->
+                    <div class="single-fact">
+                        <i class="fa fa-trophy"></i>
+                        <div class="number"><span class="counter">300</span>+</div>
+                        <p>বৃত্তিপ্রাপ্ত</p>
                     </div>
-                    <div class="features-section no-margin col-md-12 col-sm-6 no-padding wow fadeInUp" data-wow-duration="1800ms">
-                        <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-tools medium-icon"></i></div>
-                        <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
-                            <h5>Skills and Accordians</h5>
-                            <div class="separator-line bg-yellow"></div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
-                        </div>
+                    <!--/ End Single Fact -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 wow zoomIn" data-wow-delay="0.8s">
+                    <!-- Single Fact -->
+                    <div class="single-fact">
+                        <i class="fa fa-address-book-o"></i>
+                        <div class="number"><span class="counter">25</span>+</div>
+                        <p>অভিজ্ঞ শিক্ষক</p>
                     </div>
+                    <!--/ End Single Fact -->
                 </div>
             </div>
         </div>
-    </section> --}}
-    <!-- end content section -->
+    </div>
+    <!--/ End Fun Facts -->
 @endsection
 
 @section('js')

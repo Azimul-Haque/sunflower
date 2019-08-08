@@ -70,6 +70,32 @@ class IndexController extends Controller
                     ->withMembership($membership);
     }
 
+    public function getHistory()
+    {
+        
+        return view('index.history');
+    }
+
+    public function getHamidulHaque()
+    {
+        return view('index.hamidulhaque');
+    }
+
+    public function getNazimulHasan()
+    {
+        return view('index.nazimulhasan');
+    }
+
+    public function getTeachers()
+    {
+        return view('index.teachers');
+    }
+
+    public function getMLSS()
+    {
+        return view('index.mlss');
+    }
+
     public function getMission()
     {
         return view('index.mission');
