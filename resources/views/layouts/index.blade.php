@@ -8,8 +8,6 @@
     <meta charset="utf-8">
     <meta name="author" content="A. H. M. Azimul Haque">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-    {{-- <meta name="google-site-verification" content="M_ahWtl3h3gjjzpkH2T6nGc6JzWkbQlkOGy5J3oVEJY" />
-    <meta name="google-site-verification" content="EKx16eUcw6_GT9tSfJux_-bXDfCMh1S3e3lzRQtZDN0" /> --}}
     <!-- favicon -->
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/favicons/apple-icon-57x57.png') }}">
@@ -26,9 +24,9 @@
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/favicons/favicon-96x96.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicons/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('images/favicons//manifest.json') }}">
-    <meta name="msapplication-TileColor" content="#022265">
+    <meta name="msapplication-TileColor" content="#FF9800">
     <meta name="msapplication-TileImage" content="{{ asset('images/favicons/ms-icon-144x144.png') }}">
-    <meta name="theme-color" content="#022265">
+    <meta name="theme-color" content="#FF9800">
     
     <!-- animation -->
     <!-- Web Font -->
@@ -72,7 +70,7 @@
           src: url({{ asset('font/kalpurush.woff') }});
         }
         body, h1, h2, h3, h4, h5, h6, p, a, span, li, td, div {
-            /*font-family: kalpurush;*/
+            font-family: kalpurush;
         }
     </style>
 </head>
