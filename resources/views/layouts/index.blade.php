@@ -3,8 +3,8 @@
 
 <head>
     <title>@yield('title')</title>
-    <meta name="description" content="সানফ্লাওয়ার কেজি অ্যান্ড প্রি-ক্যাডেট স্কুল। Copyright Reserved. Developed By A. H. M. Azimul Haque.">
-    <meta name="keywords" content="KG School, Bangladesh, Nekmarad">
+    <meta name="description" content="Sunflower KG & Pre-cadet School (সানফ্লাওয়ার কেজি অ্যান্ড প্রি-ক্যাডেট স্কুল) Copyright Reserved. Developed By A. H. M. Azimul Haque.">
+    <meta name="keywords" content="Sunflower KG & Pre-cadet School, KG School, Bangladesh, Nekmarad">
     <meta charset="utf-8">
     <meta name="author" content="A. H. M. Azimul Haque">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
