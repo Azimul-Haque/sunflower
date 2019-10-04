@@ -109,7 +109,7 @@
 
 @section('js')
     <!-- Google Maps JS -->
-    {{-- <script src="http://maps.google.com/maps/api/js?key=AIzaSyC0RqLa90WDfoJedoE3Z_Gy7a7o8PCL2jw"></script>
+    {{-- <script src="https://maps.google.com/maps/api/js?key=AIzaSyC0RqLa90WDfoJedoE3Z_Gy7a7o8PCL2jw"></script>
     <script src="js/gmaps.min.js"></script>
     <script src="js/map-script.js"></script> --}}
 @endsection
