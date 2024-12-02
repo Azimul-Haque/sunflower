@@ -43,7 +43,7 @@
                 </div>
 
                 <center>
-                  <img src="{{ asset('images/300x100.png')}}" id='img-upload' style="height: 100px; width: auto; padding: 5px;" />
+                  <img class="img-responsive" src="{{ asset('images/300x100.png')}}" id='img-upload' style="height: 100px; width: auto; padding: 5px;" />
                 </center>
 
                 <button class="btn btn-success btn-sm" type="submit"><i class="fa fa-fw fa-floppy-o" aria-hidden="true"></i> আপলোড করুন</button>
