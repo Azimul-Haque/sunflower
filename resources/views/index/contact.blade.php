@@ -41,7 +41,7 @@
                         <div class="contact-map">
                             <!-- Map -->
                             {{-- <div id="map"></div> --}}
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.615999458621!2d88.26214811541288!3d25.98063130584398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4dc35a1dc3ec9%3A0x155dd56cf309730f!2sSunflower+KG+%26+Pre+Cadet+School!5e0!3m2!1sen!2sbd!4v1565305541929!5m2!1sen!2sbd" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5157.296962305956!2d90.71413663080013!3d23.933563451694255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37543034bb406dfb%3A0xd22910f83a9f3e56!2sNarsingdi%20BIAM%20Zila%20School%20%26%20College!5e0!3m2!1sen!2sbd!4v1733168471288!5m2!1sen!2sbd" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                             <!--/ End Map -->
                         </div>
                     </div>
