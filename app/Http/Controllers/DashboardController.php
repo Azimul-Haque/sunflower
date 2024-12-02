@@ -416,7 +416,6 @@ class DashboardController extends Controller
         $whoweare = About::where('type', 'whoweare')->get()->first();
         $whatwedo = About::where('type', 'whatwedo')->get()->first();
         $ataglance = About::where('type', 'ataglance')->get()->first();
-        $membership = About::where('type', 'membership')->get()->first();
         $mission = About::where('type', 'mission')->get()->first();
         $basicinfo = Basicinfo::where('id', 1)->first();
 
@@ -425,7 +424,6 @@ class DashboardController extends Controller
                     ->withWhoweare($whoweare)
                     ->withWhatwedo($whatwedo)
                     ->withAtaglance($ataglance)
-                    ->withMembership($membership)
                     ->withMission($mission)
                     ->withBasicinfo($basicinfo);
     }
