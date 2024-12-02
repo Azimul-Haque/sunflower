@@ -106,23 +106,6 @@
         <div class="box box-success">
           <div class="box-header with-border text-green">
             <i class="fa fa-fw fa-file-text-o"></i>
-            <h3 class="box-title">Membership (সদস্যপদ)</h3>
-          </div>
-          <!-- /.box-header -->
-          <div class="box-body">
-            {!! Form::model($membership, ['route' => ['dashboard.updateabouts', $membership->id], 'method' => 'PUT']) !!}
-              <div class="form-group">
-                <label>Text:</label>
-                {!! Form::textarea('text', str_replace('<br />', "", $membership->text), array('class' => 'form-control text-green textarea', 'required' => '', 'placeholder' => 'সদস্যপদ সম্পর্কে লিখুন')) !!}
-              </div>
-            <button class="btn btn-success btn-sm" type="submit"><i class="fa fa-fw fa-floppy-o" aria-hidden="true"></i> Submit</button>
-            {!! Form::close() !!}
-          </div>
-          <!-- /.box-body -->
-        </div>
-        <div class="box box-success">
-          <div class="box-header with-border text-green">
-            <i class="fa fa-fw fa-file-text-o"></i>
             <h3 class="box-title">At a Glance (এক নজরে)</h3>
           </div>
           <!-- /.box-header -->
