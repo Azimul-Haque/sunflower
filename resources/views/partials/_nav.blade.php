@@ -76,14 +76,14 @@
                             <i class="fa fa-phone"></i>
                             <h4>Contact<span>{{ $sharedbasicinfo->contactno }}</span></h4>
                         </div>
-                        {{-- <div class="single-widget">
+                        <div class="single-widget">
                             <i class="fa fa-envelope-o"></i>
                             <h4>Send Message<a href="mailto:mailus@mail.com"><span>support@education.com</span></a></h4>
                         </div>
                         <div class="single-widget">
                             <i class="fa fa-map-marker"></i>
                             <h4>Our Location<span>211 Ronad, California, Us</span></h4>
-                        </div> --}}
+                        </div>
                     </div>
                     <!--/ End Header Widget -->
                 </div>
