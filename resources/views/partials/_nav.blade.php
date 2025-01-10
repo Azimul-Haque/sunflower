@@ -135,7 +135,7 @@
                                 <li><a href="/notice">Notice</a></li>
                                 <li><a href="/events">Events</a></li>
                                 <li><a href="/gallery">Gallery</a></li>
-                               {{--  {{-- <li><a href="#">Blogs<i class="fa fa-angle-down"></i></a>
+                                <li><a href="#">Blogs<i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown">
                                         <li><a href="blogs.html">Blogs Grid Layout</a></li>
                                         <li><a href="blogs-left-sidebar.html">Blogs Left Sidebar</a></li>
@@ -143,7 +143,7 @@
                                         <li><a href="blog-single-left-sidebar.html">Blogs Single - Left Sidebar</a></li>
                                         <li><a href="blog-single.html">Blogs Single - Right Sidebar</a></li>
                                     </ul>
-                                </li> --}} --}}
+                                </li>
                                 <li><a href="/contact">Contact</a></li>
                             </ul>
                             <!-- End Main Menu -->
