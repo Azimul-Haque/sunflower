@@ -149,7 +149,7 @@
                             <!-- End Main Menu -->
                             <!-- button -->
                             <div class="button">
-                                <a href="/admission" class="btn"><i class="fa fa-pencil"></i>ভর্তি তথ্য</a>
+                                <a href="/admission" class="btn"><i class="fa fa-pencil"></i>Admission</a>
                             </div>
                             <!--/ End Button -->
                         </div> 
