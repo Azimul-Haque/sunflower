@@ -101,7 +101,6 @@
                   <img src="{{ asset('images/users/'. $member->image)}}" id='img-upload' style="height: 120px; width: auto; padding: 5px;" />
                 </div>
               </div>
-            @endif
             
           </div>
           <div class="modal-footer">
