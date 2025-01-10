@@ -76,6 +76,11 @@ class IndexController extends Controller
         return view('index.history');
     }
 
+    public function getDCNarsingdi()
+    {
+        return view('index.dcnarsingdi');
+    }
+
     public function getHamidulHaque()
     {
         return view('index.hamidulhaque');
