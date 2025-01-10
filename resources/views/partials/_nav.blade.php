@@ -128,8 +128,8 @@
                                                 <li><a href="/five">কেজি ফাইভ</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="/syllabus">পাঠ্যক্রম</a></li>
-                                        <li><a href="/achievements">অর্জনসমূহ</a></li>
+                                        <li><a href="/syllabus">Syllabus</a></li>
+                                        <li><a href="/achievements">Achievements</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="/notice">নোটিশ</a></li>
