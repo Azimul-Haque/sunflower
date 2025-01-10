@@ -80,13 +80,13 @@
                             <li>
                               <!-- inner menu: contains the actual data -->
                               <ul class="menu">
-                                @if($notifpendingfapplications > 0)
+                                {{-- @if($notifpendingfapplications > 0)
                                   <li>
                                     <a href="{{ route('dashboard.applications') }}">
                                       <i class="fa fa-users text-aqua"></i> {{ $notifpendingfapplications }} জন নিবন্ধন আবেদন করেছেন
                                     </a>
                                   </li>
-                                @endif
+                                @endif --}}
 
                                 @if($notifpendingpayments > 0)
                                   <li>
