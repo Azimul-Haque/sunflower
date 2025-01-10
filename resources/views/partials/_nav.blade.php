@@ -101,7 +101,7 @@
                             <!-- Main Menu -->
                             <ul id="nav" class="nav menu navbar-nav">
                                 <li class="active"><a href="/">Home</a></li>
-                                <li><a href="#">Academic<i class="fa fa-angle-down"></i></a>
+                                <li><a href="#">BIAM<i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown">
                                         <li><a href="/about">About us</a></li>
                                         <li><a href="/history">History</a></li>
