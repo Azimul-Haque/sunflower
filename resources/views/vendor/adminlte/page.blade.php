@@ -156,9 +156,9 @@
                               </li>
                               <!-- Menu Footer-->
                               <li class="user-footer">
-                                <div class="pull-left">
+                                {{-- <div class="pull-left">
                                   <a href="{{ route('dashboard.profile') }}" class="btn btn-default btn-flat"><i class="fa fa-fw fa-user-o"></i> প্রোফাইল</a>
-                                </div>
+                                </div> --}}
                                 <div class="pull-right">
                                   @if(config('adminlte.logout_method') == 'GET' || !config('adminlte.logout_method') && version_compare(\Illuminate\Foundation\Application::VERSION, '5.3.0', '<'))
                                       <a href="{{ url(config('adminlte.logout_url', 'auth/logout')) }}" class="btn btn-default btn-flat">
