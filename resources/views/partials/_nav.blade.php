@@ -132,9 +132,9 @@
                                         <li><a href="/achievements">Achievements</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="/notice">নোটিশ</a></li>
-                                <li><a href="/events">ইভেন্ট</a></li>
-                                <li><a href="/gallery">গ্যালারি</a></li>
+                                <li><a href="/notice">Notice</a></li>
+                                <li><a href="/events">Events</a></li>
+                                <li><a href="/gallery">Gallery</a></li>
                                 {{-- <li><a href="#">Blogs<i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown">
                                         <li><a href="blogs.html">Blogs Grid Layout</a></li>
