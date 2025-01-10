@@ -19,6 +19,7 @@ Route::get('/clear', ['as'=>'clear','uses'=>'IndexController@clear']);
 Route::get('/', ['as'=>'index.index','uses'=>'IndexController@index']);
 Route::get('/about', ['as'=>'index.about','uses'=>'IndexController@getAbout']);
 Route::get('/history', ['as'=>'index.history','uses'=>'IndexController@getHistory']);
+Route::get('/dc-narsingdi', ['as'=>'index.dc-narsingdi','uses'=>'IndexController@getDCNarsingdi']);
 Route::get('/hamidulhaque', ['as'=>'index.hamidulhaque','uses'=>'IndexController@getHamidulHaque']);
 Route::get('/nazimulhasan', ['as'=>'index.nazimulhasan','uses'=>'IndexController@getNazimulHasan']);
 Route::get('/teachers', ['as'=>'index.teachers','uses'=>'IndexController@getTeachers']);
