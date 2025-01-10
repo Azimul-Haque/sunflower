@@ -60,7 +60,7 @@
                         <p>As marketing professionals in the experiential world, we have become accusto to the idea of an ever evolving industry. Brands today are moving away from purely face to face physical experiences, and bringing their essence to life, not only through digital immersion creativity but through new technology as well including Virtual Reality.</p>
                         
                         <div class="signature">
-                            <img src="{{ asset('/images/DC-Narsingdi-Sir.jpg') }}" alt="#">
+                            <img src="{{ asset('/vendor/learnedu/images/signature.png') }}" alt="#">
                         </div>
                     </div>
                 </div>
