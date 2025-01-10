@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    
+    Narsingdi BIAM Zila School & College
 @endsection
 
 @section('css')
