@@ -78,12 +78,12 @@ class IndexController extends Controller
 
     public function getDCNarsingdi()
     {
-        return view('index.dcnarsingdi');
+        return view('index.dcnarsingdisir');
     }   
 
     public function getADCEduSir()
     {
-        return view('index.dcnarsingdi');
+        return view('index.adcedusir');
     }
 
     public function getHamidulHaque()
