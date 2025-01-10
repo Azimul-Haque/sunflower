@@ -103,7 +103,7 @@
                                 <li class="active"><a href="/">Home</a></li>
                                 <li><a href="#">Academic<i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown">
-                                        <li><a href="/about">আমাদের সম্পর্কে</a></li>
+                                        <li><a href="/about">About us</a></li>
                                         <li><a href="/history">বিদ্যালয়ের ইতিহাস</a></li>
                                         <li><a href="#">পরিচালকগণ<i class="fa fa-angle-right"></i></a>
                                             <ul class="dropdown submenu">
