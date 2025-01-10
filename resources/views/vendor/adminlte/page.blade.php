@@ -213,7 +213,7 @@
                           </a>
                       </li>                      
                       {{-- <li class="header">হোমপেইজ কাস্টমাইজেশন</li> --}}
-                      <li class="{{ Request::is('dashboard/staff') ? 'active' : '' }} {{ Request::is('dashboard/abouts') ? 'active' : '' }} {{ Request::is('dashboard/gallery') ? 'active' : '' }} {{ Request::is('dashboard/gallery/*') ? 'active' : '' }} {{ Request::is('dashboard/events') ? 'active' : '' }} {{ Request::is('dashboard/notice') ? 'active' : '' }} {{ Request::is('dashboard/form/messages') ? 'active' : '' }} {{ Request::is('dashboard/slider') ? 'active' : '' }} {{ Request::is('dashboard/faq') ? 'active' : '' }} treeview  menu-open">
+                      <li class="{{ Request::is('dashboard/staff') ? 'active' : '' }} {{ Request::is('dashboard/abouts') ? 'active' : '' }} {{ Request::is('dashboard/gallery') ? 'active' : '' }} {{ Request::is('dashboard/gallery/*') ? 'active' : '' }} {{ Request::is('dashboard/events') ? 'active' : '' }} {{ Request::is('dashboard/notice') ? 'active' : '' }} {{ Request::is('dashboard/form/messages') ? 'active' : '' }} {{ Request::is('dashboard/slider') ? 'active' : '' }} {{ Request::is('dashboard/faq') ? 'active' : '' }} treeview active menu-open">
                         <a href="#">
                             <i class="fa fa-fw fa-cogs"></i>
                             <span>হোমপেইজ কাস্টমাইজেশন</span>
