@@ -88,7 +88,7 @@
                                   </li>
                                 @endif --}}
 
-                                @if($notifpendingpayments > 0)
+                                {{-- @if($notifpendingpayments > 0)
                                   <li>
                                     <a href="{{ route('dashboard.memberspendingpayments') }}">
                                       <i class="fa fa-hourglass-start text-yellow"></i> {{ $notifpendingpayments }} টি প্রক্রিয়াধীন পরিশোধ রয়েছে
@@ -110,7 +110,7 @@
                                       <i class="fa fa-envelope-o text-red"></i> অপর্যাপ্ত SMS ব্যালেন্সঃ ৳ {{ $notifsmsbalance }}
                                     </a>
                                   </li>
-                                @endif                                
+                                @endif    --}}                             
                               </ul>
                             </li>
                             <li class="footer"><a href="{{ route('dashboard.notifications') }}">সব দেখুন</a></li>
