@@ -221,7 +221,7 @@
                               <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
-                        <ul class="treeview-menu menu-open">
+                        <ul class="treeview-menu">
                           <li class="{{ Request::is('dashboard/staff') ? 'active' : '' }}"><a href="{{ route('dashboard.staff') }}"><i class="fa fa-users"></i> শিক্ষক ও এমএলএসএস</a></li>
                           <li class="{{ Request::is('dashboard/slider') ? 'active' : '' }}"><a href="{{ route('dashboard.slider') }}"><i class="fa fa-list-alt"></i> স্লাইডার</a></li>
                           <li class="{{ Request::is('dashboard/abouts') ? 'active' : '' }}"><a href="{{ route('dashboard.abouts') }}"><i class="fa fa-pencil"></i> তথ্য এবং টেক্সট</a></li>
