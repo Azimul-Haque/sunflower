@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    DC Sir
+    Respected DC Sir | 
 @endsection
 
 @section('css')
