@@ -34,7 +34,7 @@
                 <div class="col-lg-8 col-12">
                     <!-- Contact -->
                     <ul class="content">
-                        <li><i class="fa fa-phone"></i>+88 01719 541 589</li>
+                        <li><i class="fa fa-phone"></i>{{ $sharedbasicinfo->contactno }}</li>
                         <li><a href="mailto:info@sunflowerkg.com"><i class="fa fa-envelope-o"></i>contact@sunflowerkg.com</a></li>
                         <li><i class="fa fa-clock-o"></i>Opening: 10:00am - 5:00pm</li>
                     </ul>
