@@ -66,9 +66,9 @@
                         <li class="dropdown notifications-menu">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                             <i class="fa fa-bell-o"></i>
-                            @if($notifcount > 0)
+                            {{-- @if($notifcount > 0)
                             <span class="label label-warning">{{ $notifcount }}</span>
-                            @endif
+                            @endif --}}
                           </a>
                           <ul class="dropdown-menu">
                             @if($notifcount > 0)
