@@ -115,7 +115,7 @@
                                         <li><a href="/mlss">Stafss</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">প্রাতিষ্ঠানিক কার্যক্রম<i class="fa fa-angle-down"></i></a>
+                                <li><a href="#">Academic<i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown">
                                         <li><a href="#">শ্রেণি কার্যক্রম<i class="fa fa-angle-right"></i></a>
                                             <ul class="dropdown submenu">
