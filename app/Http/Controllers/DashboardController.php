@@ -1740,35 +1740,31 @@ class DashboardController extends Controller
     {
         $member = User::find(Auth::user()->id);
 
-        $pendingfordashboard = DB::table('payments')
-                                 ->select(DB::raw('SUM(amount) as totalamount'))
-                                 ->where('payment_status', 0)
-                                 ->where('is_archieved', 0)
-                                 ->where('member_id', $member->member_id)
-                                 ->first();
-        $approvedfordashboard = DB::table('payments')
-                                 ->select(DB::raw('SUM(amount) as totalamount'))
-                                 ->where('payment_status', 1)
-                                 ->where('is_archieved', 0)
-                                 ->where('member_id', $member->member_id)
-                                 ->first();
-        $pendingcountdashboard = Payment::where('payment_status', 0)
-                                        ->where('is_archieved', 0)
-                                        ->where('member_id', $member->member_id)
-                                        ->get()
-                                        ->count();
-        $approvedcountdashboard = Payment::where('payment_status', 1)
-                                         ->where('is_archieved', 0)
-                                         ->where('member_id', $member->member_id)
-                                         ->get()
-                                         ->count();
+        // $pendingfordashboard = DB::table('payments')
+        //                          ->select(DB::raw('SUM(amount) as totalamount'))
+        //                          ->where('payment_status', 0)
+        //                          ->where('is_archieved', 0)
+        //                          ->where('member_id', $member->member_id)
+        //                          ->first();
+        // $approvedfordashboard = DB::table('payments')
+        //                          ->select(DB::raw('SUM(amount) as totalamount'))
+        //                          ->where('payment_status', 1)
+        //                          ->where('is_archieved', 0)
+        //                          ->where('member_id', $member->member_id)
+        //                          ->first();
+        // $pendingcountdashboard = Payment::where('payment_status', 0)
+        //                                 ->where('is_archieved', 0)
+        //                                 ->where('member_id', $member->member_id)
+        //                                 ->get()
+        //                                 ->count();
+        // $approvedcountdashboard = Payment::where('payment_status', 1)
+        //                                  ->where('is_archieved', 0)
+        //                                  ->where('member_id', $member->member_id)
+        //                                  ->get()
+        //                                  ->count();
 
         return view('dashboard.profile.index')
-                    ->withMember($member)
-                    ->withPendingfordashboard($pendingfordashboard)
-                    ->withApprovedfordashboard($approvedfordashboard)
-                    ->withPendingcountdashboard($pendingcountdashboard)
-                    ->withApprovedcountdashboard($approvedcountdashboard);
+                    ->withMember($member);
     }
 
     public function updateMemberProfile(Request $request, $id) 
