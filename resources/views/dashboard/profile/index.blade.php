@@ -105,11 +105,7 @@
             
           </div>
           <div class="modal-footer">
-            @if($member->tempmemdatas->count() > 0)
-
-            @else
-              {!! Form::submit('দাখিল করুন', array('class' => 'btn btn-primary')) !!}
-            @endif
+            {!! Form::submit('দাখিল করুন', array('class' => 'btn btn-primary')) !!}
             <button type="button" class="btn btn-default" data-dismiss="modal">ফিরে যান</button>
           </div>
           {!! Form::close() !!}
