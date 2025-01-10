@@ -71,11 +71,11 @@
                             @endif --}}
                           </a>
                           <ul class="dropdown-menu">
-                            @if($notifcount > 0)
+                            {{-- @if($notifcount > 0)
                               <li class="header">{{ $notifcount }} টি নোটিফিকেশন আছে</li>
                             @else
                               <li class="header">কোন নোটিফিকেশন নেই!</li>
-                            @endif
+                            @endif --}}
                             
                             <li>
                               <!-- inner menu: contains the actual data -->
