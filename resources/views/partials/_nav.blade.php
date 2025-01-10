@@ -107,7 +107,7 @@
                                         <li><a href="/history">History</a></li>
                                         <li><a href="#">পরিচালকগণ<i class="fa fa-angle-right"></i></a>
                                             <ul class="dropdown submenu">
-                                                <li><a href="/hamidulhaque">মোঃ হামিদুল হক (বুলবুল)</a></li>
+                                                <li><a href="/dc-narsingdi-sir">মোঃ হামিদুল হক (বুলবুল)</a></li>
                                                 <li><a href="/nazimulhasan">মোঃ নাজিমুল হাসান</a></li>
                                             </ul>
                                         </li>
