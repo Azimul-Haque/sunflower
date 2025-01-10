@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    মোঃ হামিদুল হক বুলবুল | সানফ্লাওয়ার কেজি অ্যান্ড প্রি-ক্যাডেট স্কুল
+    DC Sir
 @endsection
 
 @section('css')
