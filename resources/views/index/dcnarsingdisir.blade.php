@@ -13,10 +13,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>মোঃ হামিদুল হক বুলবুল</h2>
+                    <h2>Respected DC Sir</h2>
                     <ul class="bread-list">
-                        <li><a href="/">নীড় পাতা<i class="fa fa-angle-right"></i></a></li>
-                        <li class="active"><a href="#!">পরিচালক</a></li>
+                        <li><a href="/">Home<i class="fa fa-angle-right"></i></a></li>
+                        <li class="active"><a href="#!">DC Sir</a></li>
                     </ul>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                 <div class="col-md-4">
                     <div class="member-detail">
                         <div class="image">
-                            <img src="{{ asset('/vendor/learnedu/images/team/team1.jpg') }}" alt="#">
+                            <img src="{{ asset('/images/DC-Narsingdi-Sir.jpg') }}" alt="#">
                         </div>
                         <div class="contact">
                             <ul class="social">
@@ -51,8 +51,8 @@
                 </div>
                 <div class="col-md-8">
                     <div class="detail-content">
-                        <h2>মোঃ হামিদুল হক বুলবুল</h2>
-                        <p class="title">পরিচালক ও অধ্যক্ষ</p>
+                        <h2>MOHAMMAD RASHED HOSSAIN CHOUDHURY</h2>
+                        <p class="title">Deputy Commissioner & District Magistrate</p>
                         <p>As marketing professionals in the experiential world, we have become accusto to the idea of an ever evolving industry. Brands today are moving away from purely face to face physical experiences, and bringing their essence to life, not only through digital immersion creativity but through new technology as well including Virtual Reality.</p>
 
                         <p>As marketing professionals in the experiential world, we have become accusto to the idea of an ever evolving industry. Brands today are moving away from purely face to face physical experiences, and bringing their essence to life, not only through digital immersion creativity but through new technology as well including Virtual Reality.</p>
