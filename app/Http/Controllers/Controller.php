@@ -63,11 +63,11 @@ class Controller extends BaseController
       // }    
 
       View::share('sharedbasicinfo', $sharedbasicinfo);
-      View::share('notifpendingfapplications', $notifpendingfapplications);
-      View::share('notifpendingpayments', $notifpendingpayments);
-      View::share('notiftempmemdatas', $notiftempmemdatas);
-      View::share('notifcount', $notifcount);
-      View::share('notifsmsbalance', $notifsmsbalance);
+      // View::share('notifpendingfapplications', $notifpendingfapplications);
+      // View::share('notifpendingpayments', $notifpendingpayments);
+      // View::share('notiftempmemdatas', $notiftempmemdatas);
+      // View::share('notifcount', $notifcount);
+      // View::share('notifsmsbalance', $notifsmsbalance);
     }
 
 }
