@@ -35,7 +35,7 @@
                     <!-- Contact -->
                     <ul class="content">
                         <li><i class="fa fa-phone"></i>{{ $sharedbasicinfo->contactno }}</li>
-                        <li><a href="mailto:info@sunflowerkg.com"><i class="fa fa-envelope-o"></i>contact@sunflowerkg.com</a></li>
+                        <li><a href="mailto:{{ $sharedbasicinfo->email }}"><i class="fa fa-envelope-o"></i>{{ $sharedbasicinfo->email }}</a></li>
                         <li><i class="fa fa-clock-o"></i>Opening: 10:00am - 5:00pm</li>
                     </ul>
                     <!-- End Contact -->
