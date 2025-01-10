@@ -144,7 +144,7 @@
                                         <li><a href="blog-single.html">Blogs Single - Right Sidebar</a></li>
                                     </ul>
                                 </li> --}}
-                                <li><a href="/contact">যোগাযোগ</a></li>
+                                <li><a href="/contact">Contact</a></li>
                             </ul>
                             <!-- End Main Menu -->
                             <!-- button -->
