@@ -107,8 +107,8 @@
                                         <li><a href="/history">History</a></li>
                                         <li><a href="#">পরিচালকগণ<i class="fa fa-angle-right"></i></a>
                                             <ul class="dropdown submenu">
-                                                <li><a href="/dc-narsingdi-sir">মোঃ হামিদুল হক (বুলবুল)</a></li>
-                                                <li><a href="/adc-edu-sir">মোঃ নাজিমুল হাসান</a></li>
+                                                <li><a href="/dc-narsingdi-sir">Respected DC Sir</a></li>
+                                                <li><a href="/adc-edu-sir">Respected ADC (Edu & ICT) Sir</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="/teachers">শিক্ষকগণ</a></li>
