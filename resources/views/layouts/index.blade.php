@@ -3,7 +3,7 @@
 
 <head>
     <title>@yield('title') Narsingdi BIAM Zila School & College</title>
-    <meta name="description" content="Narsingdi BIAM Zila School & College Copyright Reserved. Developed By A. H. M. Azimul Haque.">
+    <meta name="description" content="Narsingdi BIAM Zila School & College Copyright Reserved. Developed By Innova Tech Inc..">
     <meta name="keywords" content="Narsingdi BIAM Zila School & College, KG School, Bangladesh, Nekmarad">
     <meta charset="utf-8">
     <meta name="author" content="A. H. M. Azimul Haque">
