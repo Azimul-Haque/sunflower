@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    ADC (Edu & ICT) Sir
+    Respected ADC (Edu & ICT) Sir | 
 @endsection
 
 @section('css')
