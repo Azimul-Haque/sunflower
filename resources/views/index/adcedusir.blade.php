@@ -13,10 +13,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Respected DC Sir</h2>
+                    <h2>Respected ADC *Edu & ICT() Sir</h2>
                     <ul class="bread-list">
                         <li><a href="/">Home<i class="fa fa-angle-right"></i></a></li>
-                        <li class="active"><a href="#!">DC Sir</a></li>
+                        <li class="active"><a href="#!">ADC Sir</a></li>
                     </ul>
                 </div>
             </div>
