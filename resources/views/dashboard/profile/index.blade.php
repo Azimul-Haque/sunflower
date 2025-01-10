@@ -57,9 +57,7 @@
           </div>
           {!! Form::model($member, ['route' => ['dashboard.profileupdate', $member->id], 'method' => 'PATCH', 'class' => 'form-default', 'enctype' => 'multipart/form-data', 'data-parsley-validate' => '']) !!}
           <div class="modal-body">
-            @if($member->tempmemdatas->count() > 0)
-              <big>আপনি একবার (সময়ঃ <b>{{ date('F d, Y h:i A', strtotime($member->tempmemdatas[0]->created_at)) }}</b>) তথ্য পরিবর্তন অনুরোধ করেছেন । আমাদের একজন প্রতিনিধি তা অনুমোদন (Approve) করা পর্যন্ত অনুগ্রহ করে অপেক্ষা করুন!</big>
-            @else
+            
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group ">
