@@ -34,7 +34,7 @@
                             <img src="{{ asset('/images/DC-Narsingdi-Sir.jpg') }}" alt="#">
                         </div>
                         <div class="contact">
-                            <ul class="social">
+                            {{-- <ul class="social">
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#" class="active"><i class="fa fa-twitter"></i></a></li>
@@ -45,7 +45,7 @@
                             <ul class="address">
                                 <li><a href="mailto:rachel@websitename.com"><i class="fa fa-envelope"></i>rachel@websitename.com</a></li>
                                 <li><i class="fa fa-phone"></i>+44 1236 456 8888</li>
-                            </ul>
+                            </ul> --}}
                         </div>
                     </div>
                 </div>
