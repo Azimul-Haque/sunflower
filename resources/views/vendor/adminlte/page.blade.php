@@ -234,12 +234,12 @@
                       </li>
                     @endif
                     
-                    <li class="{{ Request::is('dashboard/profile') ? 'active' : '' }}">
+                   {{--  <li class="{{ Request::is('dashboard/profile') ? 'active' : '' }}">
                         <a href="{{ route('dashboard.profile') }}">
                             <i class="fa fa-fw fa-user"></i>
                             <span>ব্যক্তিগত প্রোফাইল</span>
                         </a>
-                    </li>
+                    </li> --}}
                     <li class="{{ Request::is('dashboard/member/change/password') ? 'active' : '' }}">
                         <a href="{{ route('dashboard.member.getchangepassword') }}">
                             <i class="fa fa-fw fa-lock"></i>
