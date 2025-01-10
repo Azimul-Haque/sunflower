@@ -111,8 +111,8 @@
                                                 <li><a href="/adc-edu-sir">Respected ADC (Edu & ICT) Sir</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="/teachers">শিক্ষকগণ</a></li>
-                                        <li><a href="/mlss">এমএলএসএস</a></li>
+                                        <li><a href="/teachers">Faculties</a></li>
+                                        <li><a href="/mlss">Stafss</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">প্রাতিষ্ঠানিক কার্যক্রম<i class="fa fa-angle-down"></i></a>
