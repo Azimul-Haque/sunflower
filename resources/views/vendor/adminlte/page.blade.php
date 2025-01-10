@@ -213,7 +213,7 @@
                           </a>
                       </li>                      
                       {{-- <li class="header">হোমপেইজ কাস্টমাইজেশন</li> --}}
-                      <li class="{{ Request::is('dashboard/staff') ? 'active menu-open' : '' }} {{ Request::is('dashboard/abouts') ? 'active menu-open' : '' }} {{ Request::is('dashboard/gallery') ? 'active menu-open' : '' }} {{ Request::is('dashboard/gallery/*') ? 'active menu-open' : '' }} {{ Request::is('dashboard/events') ? 'active menu-open' : '' }} {{ Request::is('dashboard/notice') ? 'active menu-open' : '' }} {{ Request::is('dashboard/form/messages') ? 'active menu-open' : '' }} {{ Request::is('dashboard/slider') ? 'active menu-open' : '' }} {{ Request::is('dashboard/faq') ? 'active menu-open' : '' }} treeview">
+                      <li class="{{ Request::is('dashboard/staff') ? 'active menu-open' : '' }} {{ Request::is('dashboard/abouts') ? 'active menu-open' : '' }} {{ Request::is('dashboard/gallery') ? 'active menu-open' : '' }} {{ Request::is('dashboard/gallery/*') ? 'active menu-open' : '' }} {{ Request::is('dashboard/events') ? 'active menu-open' : '' }} {{ Request::is('dashboard/notice') ? 'active menu-open' : '' }} {{ Request::is('dashboard/form/messages') ? 'active menu-open' : '' }} {{ Request::is('dashboard/slider') ? 'active menu-open' : '' }} {{ Request::is('dashboard/faq') ? 'active menu-open' : '' }} treeview menu-open">
                         <a href="#">
                             <i class="fa fa-fw fa-cogs"></i>
                             <span>হোমপেইজ কাস্টমাইজেশন</span>
