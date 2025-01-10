@@ -100,8 +100,8 @@
                         <div class="navbar-collapse">
                             <!-- Main Menu -->
                             <ul id="nav" class="nav menu navbar-nav">
-                                <li class="active"><a href="/">নীড় পাতা</a></li>
-                                <li><a href="#">বিদ্যালয়<i class="fa fa-angle-down"></i></a>
+                                <li class="active"><a href="/">Home</a></li>
+                                <li><a href="#">Academic<i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown">
                                         <li><a href="/about">আমাদের সম্পর্কে</a></li>
                                         <li><a href="/history">বিদ্যালয়ের ইতিহাস</a></li>
