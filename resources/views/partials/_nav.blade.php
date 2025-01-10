@@ -74,7 +74,7 @@
                     <div class="header-widget">
                         <div class="single-widget">
                             <i class="fa fa-phone"></i>
-                            <h4>যোগাযোগ<span>(+88) 01719 541 589</span></h4>
+                            <h4>Contact<span>{{ $sharedbasicinfo->contactno }}</span></h4>
                         </div>
                         {{-- <div class="single-widget">
                             <i class="fa fa-envelope-o"></i>
