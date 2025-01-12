@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'CVCS | Slider')
+@section('title', 'Slider | ')
 
 @section('css')
   {!!Html::style('css/parsley.css')!!}
