@@ -111,6 +111,7 @@
                                 <li><a href="/teachers"><i class="fa fa-angle-right"></i>Faculties</a></li>
                                 <li><a href="/notice"><i class="fa fa-angle-right"></i>Notices</a></li>
                                 <li><a href="/contact"><i class="fa fa-angle-right"></i>Contact us</a></li>
+                                <li><a href="/faq"><i class="fa fa-angle-right"></i>FAQs</a></li>
                             </ul>
                         </div>
                         <!--/ End Useful Links -->
