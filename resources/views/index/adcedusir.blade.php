@@ -31,7 +31,7 @@
                 <div class="col-md-4">
                     <div class="member-detail">
                         <div class="image">
-                            <img src="{{ asset('/images/DC-Narsingdi-Sir.jpg') }}" alt="#">
+                            <img src="{{ asset('/images/ADC-Sir.jpg') }}" alt="#">
                         </div>
                         <div class="contact">
                             {{-- <ul class="social">
