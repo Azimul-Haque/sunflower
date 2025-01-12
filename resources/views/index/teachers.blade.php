@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    Our Awesome Teachers
+    Our Awesome Teachers | 
 @endsection
 
 @section('css')
