@@ -86,7 +86,7 @@
                         <!-- Contact-Info -->
                         <div class="contact-info">
                             <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h3>ইমেইল এড্রেস</h3>
+                            <h3>Email Address</h3>
                             <a href="mailto:{{ $sharedbasicinfo->email }}">{{ $sharedbasicinfo->email }}</a>
                             {{-- <a href="mailto:admission@sunflowerkg.com">admission@sunflowerkg.com</a> --}}
                         </div>
