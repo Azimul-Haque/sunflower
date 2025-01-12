@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    CVCS | Notice
+    Notice | 
 @endsection
 
 @section('css')
