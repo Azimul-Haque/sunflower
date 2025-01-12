@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Teachers & Staffs')
+@section('title', 'Teachers & Staffs | ')
 
 @section('css')
 
