@@ -79,7 +79,7 @@
                         <div class="contact-info">
                             <div class="icon"><i class="fa fa-map-marker"></i></div>
                             <h3>Address</h3>
-                            <p>{{ {{ $sharedbasicinfo->address }} }}</p>
+                            <p>{{ $sharedbasicinfo->address }}</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-12">
