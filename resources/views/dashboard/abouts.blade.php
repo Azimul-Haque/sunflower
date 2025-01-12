@@ -127,7 +127,7 @@
         <div class="box box-success">
           <div class="box-header with-border text-green">
             <i class="fa fa-fw fa-file-text-o"></i>
-            <h3 class="box-title">মিশন ও ভিশন</h3>
+            <h3 class="box-title">Mission & Vision</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
