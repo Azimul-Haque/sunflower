@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    Our History |
+    Our History | 
 @endsection
 
 @section('css')
