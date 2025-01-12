@@ -97,10 +97,10 @@
           </div>
           <!-- /.box-header -->
           <div class="box-body">
-            {!! Form::model($whoweare, ['route' => ['dashboard.updateabouts', $whoweare->id], 'method' => 'PUT']) !!}
+            {!! Form::model($history, ['route' => ['dashboard.updateabouts', $history->id], 'method' => 'PUT']) !!}
               <div class="form-group">
                 <label>Text:</label>
-                {!! Form::textarea('text', str_replace('<br />', "", $whoweare->text), array('class' => 'form-control text-green textarea', 'required' => '', 'placeholder' => 'Write brief history')) !!}
+                {!! Form::textarea('text', str_replace('<br />', "", $history->text), array('class' => 'form-control text-green textarea', 'required' => '', 'placeholder' => 'Write brief history')) !!}
               </div>
             <button class="btn btn-success btn-sm" type="submit"><i class="fa fa-fw fa-floppy-o" aria-hidden="true"></i> Submit</button>
             {!! Form::close() !!}
