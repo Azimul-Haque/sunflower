@@ -74,14 +74,14 @@
         <div class="box box-primary">
           <div class="box-header with-border text-blue">
             <i class="fa fa-fw fa-file-text-o"></i>
-            <h3 class="box-title">What we do (আমরা যা করি)</h3>
+            <h3 class="box-title">What we do</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
             {!! Form::model($whatwedo, ['route' => ['dashboard.updateabouts', $whatwedo->id], 'method' => 'PUT']) !!}
               <div class="form-group">
                 <label>Text:</label>
-                {!! Form::textarea('text', str_replace('<br />', "", $whatwedo->text), array('class' => 'form-control text-blue textarea', 'required' => '', 'placeholder' => 'আমরা যা করি লিখুন')) !!}
+                {!! Form::textarea('text', str_replace('<br />', "", $whatwedo->text), array('class' => 'form-control text-blue textarea', 'required' => '', 'placeholder' => 'What we do')) !!}
               </div>
             <button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-fw fa-floppy-o" aria-hidden="true"></i> Submit</button>
             {!! Form::close() !!}
