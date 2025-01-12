@@ -50,7 +50,7 @@
     					<div class="feature-head">
     						<img src="vendor/learnedu/images/feature3.jpg" alt="#">
     					</div>
-    					<h2>Perfect Guidelines</h2>
+    					<h2>Empowering Bright Futures</h2>
     					<p>Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim</p>	
     				</div>
     				<!--/ End Single Feature -->
