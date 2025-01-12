@@ -96,7 +96,7 @@
                         <div class="contact-info">
                             <div class="icon"><i class="fa fa-phone"></i></div>
                             <h3>Get in Touch</h3>
-                            <p>{{ $sharedbasicinfo->contactno }}</p>
+                            <a href="tel:{{ $sharedbasicinfo->contactno }}">{{ $sharedbasicinfo->contactno }}</a>
                             {{-- <p>+880 1716 457 419</p> --}}
                         </div>
                     </div>
