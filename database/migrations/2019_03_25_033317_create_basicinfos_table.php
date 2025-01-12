@@ -17,6 +17,7 @@ class CreateBasicinfosTable extends Migration
             $table->string('address');
             $table->string('contactno');
             $table->string('email');
+            $table->string('shorttext');
             $table->string('fb');
             $table->string('twitter');
             $table->string('ytube');
