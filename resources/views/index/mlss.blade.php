@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    এমএলএসএস | সানফ্লাওয়ার কেজি অ্যান্ড প্রি-ক্যাডেট স্কুল
+    Stafss | 
 @endsection
 
 @section('css')
