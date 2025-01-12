@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'CVCS',
+    'title' => 'NBZSC',
 
     'title_prefix' => '',
 
