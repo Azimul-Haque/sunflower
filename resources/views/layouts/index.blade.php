@@ -123,7 +123,7 @@
                                 <li><a href="https://biam.gov.bd/"><i class="fa fa-angle-right"></i>BIAM Foundation</a></li>
                                 <li><a href="https://drive.google.com/file/d/1bu_sUosPAThy6FZeNUjWrqE1ZVwbuxdC/view"><i class="fa fa-angle-right"></i>BIAM Schools</a></li>
                                 <li><a href="https://mopa.gov.bd/"><i class="fa fa-angle-right"></i>MoPA</a></li>
-                                <li><a href="/notice"><i class="fa fa-angle-right"></i>Notices</a></li>
+                                <li><a href="https://cabinet.gov.bd/"><i class="fa fa-angle-right"></i>Notices</a></li>
                                 <li><a href="/contact"><i class="fa fa-angle-right"></i>Contact us</a></li>
                             </ul>
                             {{-- <div class="mail">
