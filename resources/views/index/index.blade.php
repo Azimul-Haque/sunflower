@@ -17,7 +17,7 @@
     			<div class="col-12 wow zoomIn">
     				<div class="section-title">
     					<h2>We Provide <span>Education</span> That Inspires and Empowers</h2>
-    					<p>At Narsingdi BIAM Zilla School & College, we deliver holistic education, combining academic excellence with moral values. With expert teachers and modern facilities, we empower students to grow intellectually, ethically, and socially, preparing them for a successful future.</p>
+    					<p>At <b>Narsingdi BIAM Zilla School & College</b>, we deliver holistic education, combining academic excellence with moral values. With expert teachers and modern facilities, we empower students to grow intellectually, ethically, and socially, preparing them for a successful future.</p>
     				</div>
     			</div>
     		</div>
