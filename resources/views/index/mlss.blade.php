@@ -13,10 +13,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>এমএলএসএস</h2>
+                    <h2>Staffs</h2>
                     <ul class="bread-list">
-                        <li><a href="/">নীড় পাতা<i class="fa fa-angle-right"></i></a></li>
-                        <li class="active"><a href="#!">এমএলএসএস তালিকা</a></li>
+                        <li><a href="/">Home<i class="fa fa-angle-right"></i></a></li>
+                        <li class="active"><a href="#!">Staffs</a></li>
                     </ul>
                 </div>
             </div>
