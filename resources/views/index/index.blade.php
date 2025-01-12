@@ -251,7 +251,7 @@
     				<div class="single-fact">
     					<i class="fa fa-users"></i>
     					<div class="number"><span class="counter">500</span>+</div>
-    					<p>বর্তমান শিক্ষার্থী</p>
+    					<p>Currents Students</p>
     				</div>
     				<!--/ End Single Fact -->
     			</div>
@@ -260,7 +260,7 @@
     				<div class="single-fact">
     					<i class="fa fa-graduation-cap"></i>
     					<div class="number"><span class="counter">2000</span>+</div>
-    					<p>উত্তীর্ণ শিক্ষার্থী</p>
+    					<p>Passed Students</p>
     				</div>
     				<!--/ End Single Fact -->
     			</div>
