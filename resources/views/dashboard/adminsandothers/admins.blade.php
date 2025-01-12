@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'CVCS | অ্যাডমিনগণ')
+@section('title', 'Admins | ')
 
 @section('css')
 
