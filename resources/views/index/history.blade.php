@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    আমাদের ইতিহাস | সানফ্লাওয়ার কেজি অ্যান্ড প্রি-ক্যাডেট স্কুল
+    Our History |
 @endsection
 
 @section('css')
