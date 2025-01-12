@@ -36,7 +36,7 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="about-text">
-                        <h2>ইতিহাস ১৯৯৩</h2>
+                        <h2>Our History</h2>
                         <p>As marketing professionals in the experiential world, we have become accusto to the idea of an ever evolving industry. Brands today are moving away from purely face to face physical experiences, and bringing their essence to life, not only through digital immersion creativity but through new technology as well including Virtual Reality.</p>
                         <p>face physical experiences, and bringing their essence to life, not only through digital immersion creativity but through new technology as well including Virtual Reality As marketing professionals in the experiential world, we have become accusto to the idea of an ever evolving industry. Brands today are moving away from purely face to face physical experiences,</p>
                     </div>
