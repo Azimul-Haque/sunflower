@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('title_prefix', config('adminlte.title_prefix', ''))
 @yield('title', config('adminlte.title', 'AdminLTE 2'))
-@yield('title_postfix', config('adminlte.title_postfix', ''))</title>
+@yield('title_postfix', config('adminlte.title_postfix', '')) NBZSC</title>
     {{-- favicon --}}
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
     {{-- favicon --}}
