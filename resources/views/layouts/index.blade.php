@@ -106,7 +106,7 @@
                         <div class="single-widget useful-links">
                             <h2>Useful Links</h2>
                             <ul>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Home</a></li>
+                                <li><a href="/"><i class="fa fa-angle-right"></i>Home</a></li>
                                 <li><a href="#"><i class="fa fa-angle-right"></i>আমাদের সম্পর্কে</a></li>
                                 <li><a href="#"><i class="fa fa-angle-right"></i>শিক্ষকবৃন্দ</a></li>
                                 <li><a href="#"><i class="fa fa-angle-right"></i>নোটিশ</a></li>
