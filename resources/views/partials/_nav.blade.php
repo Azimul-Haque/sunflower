@@ -105,6 +105,7 @@
                                     <ul class="dropdown">
                                         <li><a href="/about">About us</a></li>
                                         <li><a href="/history">History</a></li>
+                                        <li><a href="/mission">Mission & Vision</a></li>
                                         <li><a href="#">District Administration<i class="fa fa-angle-right"></i></a>
                                             <ul class="dropdown submenu">
                                                 <li><a href="/dc-narsingdi-sir">Respected DC Sir</a></li>
