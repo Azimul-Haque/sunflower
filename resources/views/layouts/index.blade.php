@@ -109,7 +109,7 @@
                                 <li><a href="/"><i class="fa fa-angle-right"></i>Home</a></li>
                                 <li><a href="/about"><i class="fa fa-angle-right"></i>About us</a></li>
                                 <li><a href="/"><i class="fa fa-angle-right"></i>শিক্ষকবৃন্দ</a></li>
-                                <li><a href="/"><i class="fa fa-angle-right"></i>নোটিশ</a></li>
+                                <li><a href="/notice"><i class="fa fa-angle-right"></i>নোটিশ</a></li>
                                 <li><a href="/contact"><i class="fa fa-angle-right"></i>যোগাযোগ</a></li>
                             </ul>
                         </div>
