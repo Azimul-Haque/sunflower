@@ -31,7 +31,7 @@
               </div>
               <div class="input-group form-group">
                 <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
-                {!! Form::text('shorttext', null, array('class' => 'form-control text-blue', 'required' => '', 'placeholder' => 'Write Short Text')) !!}
+                {!! Form::text('shorttext', null, array('class' => 'form-control text-blue', 'required' => '', 'placeholder' => 'Write Short Text (180 Char Max)')) !!}
               </div>
               <div class="input-group form-group">
                 <span class="input-group-addon"><i class="fa fa-facebook-official"></i></span>
