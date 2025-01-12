@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    CVCS | Gallery
+    Gallery |
 @endsection
 
 @section('css')
