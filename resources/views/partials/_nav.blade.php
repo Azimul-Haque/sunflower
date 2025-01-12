@@ -73,8 +73,8 @@
                     <!-- Header Widget -->
                     <div class="header-widget">
                         <div class="single-widget">
-                            <a href="tel:{{ $sharedbasicinfo->contactno }}" title=""></a><i class="fa fa-phone"></i>
-                            <h4>Contact<span>{{ $sharedbasicinfo->contactno }}</span></h4>
+                            <a href="tel:{{ $sharedbasicinfo->contactno }}" title=""><i class="fa fa-phone"></i></a>
+                            <h4>Contact<a href="tel:{{ $sharedbasicinfo->contactno }}" title=""><span>{{ $sharedbasicinfo->contactno }}</span></a></h4>
                         </div>
                         {{-- <div class="single-widget">
                             <i class="fa fa-envelope-o"></i>
