@@ -29,7 +29,7 @@
     						<img src="vendor/learnedu/images/feature1.jpg" alt="#">
     					</div>
     					<h2>Inspiring Young Minds</h2>
-    					<p>Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim</p>	
+    					<p>We nurture creativity and innovation through quality education and a supportive environment.</p>	
     				</div>
     				<!--/ End Single Feature -->
     			</div>
