@@ -73,7 +73,7 @@
                     <!-- Header Widget -->
                     <div class="header-widget">
                         <div class="single-widget">
-                            <i class="fa fa-phone"></i>
+                            <<a href="callto:{{ $sharedbasicinfo->contactno }}" title=""></a><i class="fa fa-phone"></i>
                             <h4>Contact<span>{{ $sharedbasicinfo->contactno }}</span></h4>
                         </div>
                         {{-- <div class="single-widget">
