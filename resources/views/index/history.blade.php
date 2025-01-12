@@ -75,7 +75,6 @@
                 <div class="col-lg-6 col-12">
                     <div class="single-image overlay">
                         <img src="{{ asset('vendor/learnedu/images/about.jpg') }}" alt="#">
-                        {{-- <a href="https://www.youtube.com/watch?v=UalTfOIDQ7M" class="btn video-popup mfp-fade"><i class="fa fa-play"></i></a> --}}
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
