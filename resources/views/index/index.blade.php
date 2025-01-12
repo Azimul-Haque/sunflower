@@ -39,7 +39,7 @@
     					<div class="feature-head">
     						<img src="vendor/learnedu/images/feature2.jpg" alt="#">
     					</div>
-    					<h2>Student Admin Panel</h2>
+    					<h2>Building Strong Values</h2>
     					<p>Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim</p>	
     				</div>
     				<!--/ End Single Feature -->
