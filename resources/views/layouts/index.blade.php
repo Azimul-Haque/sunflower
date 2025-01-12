@@ -150,12 +150,12 @@
                             <div class="row">
                                 <div class="col-12">
                                     <!-- Social -->
-                                    <ul class="social">
+                                    {{-- <ul class="social">
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                                    </ul>
+                                    </ul> --}}
                                     <!-- End Social -->
                                     <!-- Copyright -->
                                     <div class="copyright">
