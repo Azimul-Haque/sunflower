@@ -211,8 +211,8 @@
     <!-- Scroll Up JS-->
     <script src="{{ asset('vendor/learnedu/js/jquery.scrollUp.min.js') }}"></script>
     <!-- Google Maps JS -->
-    <script src="https://maps.google.com/maps/api/js?key=AIzaSyC0RqLa90WDfoJedoE3Z_Gy7a7o8PCL2jw"></script>
-    <script src="{{ asset('vendor/learnedu/js/gmaps.min.js') }}"></script>
+    {{-- <script src="https://maps.google.com/maps/api/js?key=AIzaSyC0RqLa90WDfoJedoE3Z_Gy7a7o8PCL2jw"></script>
+    <script src="{{ asset('vendor/learnedu/js/gmaps.min.js') }}"></script> --}}
     <!-- Main JS-->
     <script src="{{ asset('vendor/learnedu/js/main.js') }}"></script>
 
