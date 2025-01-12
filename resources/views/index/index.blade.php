@@ -40,7 +40,7 @@
     						<img src="vendor/learnedu/images/feature2.jpg" alt="#">
     					</div>
     					<h2>Building Strong Values</h2>
-    					<p>Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim</p>	
+    					<p>Our focus on discipline and moral development shapes students into responsible citizens.</p>	
     				</div>
     				<!--/ End Single Feature -->
     			</div>
