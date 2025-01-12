@@ -94,7 +94,7 @@
                             <div class="logo"><a href="#"><img src="/vendor/learnedu/images/logo2.png" alt="#"></a></div>
                             <p>{{ $sharedbasicinfo->shorttext }}</p>
                             <ul class="list">
-                                <li><i class="fa fa-phone"></i>Phone: {{ $sharedbasicinfo->contactno }}</li>
+                                <li><a href="tel:{{ $sharedbasicinfo->contactno }}" title=""><i class="fa fa-phone"></i>Phone: {{ $sharedbasicinfo->contactno }}</a></li>
                                 <li><i class="fa fa-envelope"></i>Email: <a href="mailto:{{ $sharedbasicinfo->email }}">{{ $sharedbasicinfo->email }}</a></li>
                                 <li><i class="fa fa-map-o"></i>{{ $sharedbasicinfo->address }}</li>
                             </ul>
