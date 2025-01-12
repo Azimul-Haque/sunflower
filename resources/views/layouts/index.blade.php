@@ -119,13 +119,20 @@
                         <!-- Newsletter -->
                         <div class="single-widget newsletter">
                             <h2>BIAM Foundation</h2>
-                            <div class="mail">
+                            <ul>
+                                <li><a href="/"><i class="fa fa-angle-right"></i>Home</a></li>
+                                <li><a href="/about"><i class="fa fa-angle-right"></i>About us</a></li>
+                                <li><a href="/teachers"><i class="fa fa-angle-right"></i>Faculties</a></li>
+                                <li><a href="/notice"><i class="fa fa-angle-right"></i>Notices</a></li>
+                                <li><a href="/contact"><i class="fa fa-angle-right"></i>Contact us</a></li>
+                            </ul>
+                            {{-- <div class="mail">
                                 <p>Don't miss to  subscribe to our news feed, Get the latest updates from us!</p>
                                 <div class="form">
                                     <input type="email" placeholder="Enter your email">
                                     <button class="button" type="submit"><i class="fa fa-envelope"></i></button>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                         <!--/ End Newsletter -->
                     </div>
