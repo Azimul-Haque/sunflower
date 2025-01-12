@@ -159,7 +159,7 @@
                                     <!-- End Social -->
                                     <!-- Copyright -->
                                     <div class="copyright">
-                                        <p>© Copyright Reserved {{ date('Y') }}. Developed with ❤️ by <a href="http://orbachinujbuk.com/" target="_blank">A. H. M. Azimul Haque</a>.</p>
+                                        <p>© Copyright Reserved {{ date('Y') }}. Developed by <a href="http://orbachinujbuk.com/" target="_blank">A. H. M. Azimul Haque</a>.</p>
                                     </div>
                                     <!--/ End Copyright -->
                                 </div>
