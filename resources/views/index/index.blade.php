@@ -87,7 +87,7 @@
     			<div class="col-12 wow zoomIn">
     				<div class="section-title">
     					<h2>Our Awesome <span>Teachers</span></h2>
-    					<p>Mauris at varius orci. Vestibulum interdum felis eu nisl pulvinar, quis ultricies nibh. Sed ultricies ante vitae laoreet sagittis. In pellentesque viverra purus. Sed risus est, molestie nec hendrerit hendreri </p>
+    					<p>At Narsingdi BIAM Zilla School & College, our teachers are the heart of our success. Highly qualified, dedicated, and passionate, they go beyond teaching to inspire, mentor, and shape young minds, fostering excellence in academics and values.</p>
     				</div>
     			</div>
     		</div>
