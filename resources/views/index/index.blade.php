@@ -68,7 +68,7 @@
     				<div class="cta-inner overlay">
     					<div class="text-content">
     						<h2>We Focus On Excellence in Education and Character Development</h2>
-    						<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore cum. Coluta nobis est eligendi optio cumque nihil impedit quo minusd quod maxime placeat facere possimus, omnis voluptas assumenda est. Our friendly support team is standing by to help you every step of the way.Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore cum. Coluta nobis est eligendi optio cumque nihil impedit quo minusd quod maxime placeat facere possimus, omnis voluptas assumenda est. Our friendly support team is standing by to help you every step of the way.</p>
+    						<p>At <b>Narsingdi BIAM Zilla School & College</b>, we believe in shaping future leaders through quality education and a commitment to character development. Our institution is dedicated to fostering academic excellence, moral values, and co-curricular activities that prepare students to excel in life. Situated in the heart of Narsingdi, we provide a nurturing environment where curiosity meets creativity, and innovation drives learning. With highly qualified teachers, modern facilities, and a focus on discipline, we aim to create a generation equipped to meet the challenges of tomorrow. Join us as we continue our journey to empower young minds with knowledge and values.</p>
     						<div class="button">
     							<a class="btn primary wow fadeInUp" href="contact.html" >Register Now</a>
     						</div>
