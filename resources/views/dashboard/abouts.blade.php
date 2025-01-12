@@ -64,7 +64,7 @@
             {!! Form::model($about, ['route' => ['dashboard.updateabouts', $about->id], 'method' => 'PUT']) !!}
               <div class="form-group">
                 <label>Text:</label>
-                {!! Form::textarea('text', str_replace('<br />', "", $about->text), array('class' => 'form-control text-blue textarea', 'required' => '', 'placeholder' => 'সিভিসিএস-এর ব্যাপারে লিখুন')) !!}
+                {!! Form::textarea('text', str_replace('<br />', "", $about->text), array('class' => 'form-control text-blue textarea', 'required' => '', 'placeholder' => 'Write details about the institution')) !!}
               </div>
             <button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-fw fa-floppy-o" aria-hidden="true"></i> Submit</button>
             {!! Form::close() !!}
