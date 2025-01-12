@@ -34,7 +34,7 @@
                 <div class="col-lg-8 col-12">
                     <!-- Contact -->
                     <ul class="content">
-                        <li><i class="fa fa-phone"></i>{{ $sharedbasicinfo->contactno }}</li>
+                        <li><a href="tel:{{ $sharedbasicinfo->contactno }}" title=""><i class="fa fa-phone"></i>{{ $sharedbasicinfo->contactno }}</a></li>
                         <li><a href="mailto:{{ $sharedbasicinfo->email }}"><i class="fa fa-envelope-o"></i>{{ $sharedbasicinfo->email }}</a></li>
                         <li><i class="fa fa-clock-o"></i>Opening: 10:00am - 5:00pm</li>
                     </ul>
