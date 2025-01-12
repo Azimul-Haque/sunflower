@@ -93,7 +93,7 @@
         <div class="box box-success">
           <div class="box-header with-border text-green">
             <i class="fa fa-fw fa-file-text-o"></i>
-            <h3 class="box-title">সংক্ষিপ্ত ইতিহাস</h3>
+            <h3 class="box-title">Brief History</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
