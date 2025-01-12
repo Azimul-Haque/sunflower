@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    
+    About us | 
 @endsection
 
 @section('css')
