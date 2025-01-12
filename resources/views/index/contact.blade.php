@@ -79,7 +79,7 @@
                         <div class="contact-info">
                             <div class="icon"><i class="fa fa-map-marker"></i></div>
                             <h3>Address</h3>
-                            <p>{{ $shared }}</p>
+                            <p>{{ {{ $sharedbasicinfo->address }} }}</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-12">
@@ -96,8 +96,8 @@
                         <div class="contact-info">
                             <div class="icon"><i class="fa fa-phone"></i></div>
                             <h3>Get in Touch</h3>
-                            <p>+880 1719 541 589</p>
-                            <p>+880 1716 457 419</p>
+                            <p>{{ $sharedbasicinfo->contactno }}</p>
+                            {{-- <p>+880 1716 457 419</p> --}}
                         </div>
                     </div>
                 </div>
