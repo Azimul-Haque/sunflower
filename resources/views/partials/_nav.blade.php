@@ -8,7 +8,7 @@
 <!--/ End Book Preloader -->
 
 <!-- Mp Color -->
-<div class="mp-color">
+{{-- <div class="mp-color">
     <div class="icon inOut"><i class="fa fa-cog fa-spin"></i></div>
     <h4>রঙ নির্ধারণ করুন</h4>
     <span class="color1"></span>
@@ -19,7 +19,7 @@
     <span class="color6"></span>
     <span class="color7"></span>
     <span class="color8"></span>
-</div>
+</div> --}}
 <!--/ End Mp Color -->
 
 <!-- Header -->
