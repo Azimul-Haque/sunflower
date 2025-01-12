@@ -134,7 +134,7 @@
             {!! Form::model($mission, ['route' => ['dashboard.updateabouts', $mission->id], 'method' => 'PUT']) !!}
               <div class="form-group">
                 <label>Text:</label>
-                {!! Form::textarea('text', str_replace('<br />', "", $mission->text) , array('placeholder' => 'মিশন ও ভিশন লিখুন','class' => 'form-control text-green textarea', 'autocomplete' => 'off')) !!}
+                {!! Form::textarea('text', str_replace('<br />', "", $mission->text) , array('placeholder' => 'Write mission and vision','class' => 'form-control text-green textarea', 'autocomplete' => 'off')) !!}
               </div>
             <button class="btn btn-success btn-sm" type="submit"><i class="fa fa-fw fa-floppy-o" aria-hidden="true"></i> Submit</button>
             {!! Form::close() !!}
