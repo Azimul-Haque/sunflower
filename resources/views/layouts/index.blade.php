@@ -55,13 +55,13 @@
     
     <!-- Learedu Color -->
     <link rel="stylesheet" href="{{ asset('vendor/learnedu/css/color/color1.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('vendor/learnedu/css/color/color2.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/learnedu/css/color/color2.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/learnedu/css/color/color3.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/learnedu/css/color/color4.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/learnedu/css/color/color5.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/learnedu/css/color/color6.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/learnedu/css/color/color7.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/learnedu/css/color/color8.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('vendor/learnedu/css/color/color8.css') }}">
     <link rel="stylesheet" href="#" id="colors">    
     @yield('css')
     <style type="text/css">
