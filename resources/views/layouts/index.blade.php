@@ -91,7 +91,7 @@
                     <div class="col-md-4">
                         <!-- About -->
                         <div class="single-widget about">
-                            <div class="logo"><a href="/"><img src="/images/logo2.png" alt="Narsingdi BIAM Logo with Text" style="width: 100px;"></a></div>"></a></div>
+                            <div class="logo"><a href="/"><img src="/images/logo2.png" alt="Narsingdi BIAM Logo with Text" style=""></a></div>"></a></div>
                             <p>{{ $sharedbasicinfo->shorttext }}</p>
                             <ul class="list">
                                 <li><a href="tel:{{ $sharedbasicinfo->contactno }}" title=""><i class="fa fa-phone"></i>Phone: {{ $sharedbasicinfo->contactno }}</a></li>
