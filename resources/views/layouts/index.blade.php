@@ -118,7 +118,7 @@
                     <div class="col-md-4">
                         <!-- Newsletter -->
                         <div class="single-widget newsletter">
-                            <h2>Subscribe Newsletter</h2>
+                            <h2>BIAM Foundation</h2>
                             <div class="mail">
                                 <p>Don't miss to  subscribe to our news feed, Get the latest updates from us!</p>
                                 <div class="form">
