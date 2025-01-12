@@ -60,7 +60,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="logo">
+                    <div class="logo" style="margin-top: 15px;">
                         @mobile
                         <a href="/" style="color: #6D6E6A;"><img src="/images/logo.png" alt="Logo of Narsingdi BIAM" style="width: 40px; height: auto;"> Narsingdi BIAM Zila School & College</a>
                         @elsemobile
