@@ -78,8 +78,8 @@
                         <!-- Contact-Info -->
                         <div class="contact-info">
                             <div class="icon"><i class="fa fa-map-marker"></i></div>
-                            <h3>ঠিকানা</h3>
-                            <p>নেকমরদ (বঙ্গবন্ধু কলেজ থেকে ২০০ মিঃ পশ্চিমে), রানীশংকৈল, ঠাকুরগাঁও-৫১২১</p>
+                            <h3>Address</h3>
+                            <p>{{ $shared }}</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-12">
