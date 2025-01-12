@@ -13,10 +13,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>যোগাযোগ</h2>
+                    <h2>Contact</h2>
                     <ul class="bread-list">
                         <li><a href="/">নীড় পাতা<i class="fa fa-angle-right"></i></a></li>
-                        <li class="active"><a href="#!">যোগাযোগ</a></li>
+                        <li class="active"><a href="#!">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h2><span>যোগাযোগ</span> ফর্ম</h2>
+                        <h2><span>Contact</span> Form</h2>
                         <p>Mauris at varius orci. Vestibulum interdum felis eu nisl pulvinar, quis ultricies nibh. Sed ultricies ante vitae laoreet sagittis. In pellentesque viverra purus. Sed risus est, molestie nec hendrerit hendrerit, sollicitudin nec ante.  </p>
                     </div>
                 </div>
