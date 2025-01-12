@@ -125,6 +125,7 @@
                                 <li><a href="https://mopa.gov.bd/"><i class="fa fa-angle-right"></i>MoPA</a></li>
                                 <li><a href="https://cabinet.gov.bd/"><i class="fa fa-angle-right"></i>Cabinet Division</a></li>
                                 <li><a href="https://www.narsingdi.gov.bd/"><i class="fa fa-angle-right"></i>DC Office, Narsingdi</a></li>
+                                <li><a href="https://www.narsingdi.gov.bd/"><i class="fa fa-angle-right"></i>National Portal</a></li>
                             </ul>
                             {{-- <div class="mail">
                                 <p>Don't miss to  subscribe to our news feed, Get the latest updates from us!</p>
