@@ -28,7 +28,7 @@
     					<div class="feature-head">
     						<img src="vendor/learnedu/images/feature1.jpg" alt="#">
     					</div>
-    					<h2>Online Courses Facilities</h2>
+    					<h2>Inspiring Young Minds</h2>
     					<p>Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim</p>	
     				</div>
     				<!--/ End Single Feature -->
