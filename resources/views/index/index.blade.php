@@ -16,7 +16,7 @@
     		<div class="row">
     			<div class="col-12 wow zoomIn">
     				<div class="section-title">
-    					<h2>We Provide <span>Educational</span> Solutions</h2>
+    					<h2>We Provide <span>Education</span> That Inspires and Empowers</h2>
     					<p>Mauris at varius orci. Vestibulum interdum felis eu nisl pulvinar, quis ultricies nibh. Sed ultricies ante vitae laoreet sagittis. In pellentesque viverra purus. Sed risus est, molestie nec hendrerit hendreri </p>
     				</div>
     			</div>
