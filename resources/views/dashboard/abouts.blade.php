@@ -117,7 +117,7 @@
             {!! Form::model($ataglance, ['route' => ['dashboard.updateabouts', $ataglance->id], 'method' => 'PUT']) !!}
               <div class="form-group">
                 <label>Text:</label>
-                {!! Form::textarea('text', str_replace('<br />', "", $ataglance->text), array('class' => 'form-control text-green textarea', 'required' => '', 'placeholder' => 'এক নজরে লিখুন')) !!}
+                {!! Form::textarea('text', str_replace('<br />', "", $ataglance->text), array('class' => 'form-control text-green textarea', 'required' => '', 'placeholder' => 'Write at a glance')) !!}
               </div>
             <button class="btn btn-success btn-sm" type="submit"><i class="fa fa-fw fa-floppy-o" aria-hidden="true"></i> Submit</button>
             {!! Form::close() !!}
