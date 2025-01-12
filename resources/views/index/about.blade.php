@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    আমাদের সম্পর্কে | সানফ্লাওয়ার কেজি অ্যান্ড প্রি-ক্যাডেট স্কুল
+    
 @endsection
 
 @section('css')
