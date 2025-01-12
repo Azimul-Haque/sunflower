@@ -69,7 +69,7 @@
     <!--/ End History 2 -->
 
     <!-- History 3 -->
-    <section class="about-us section">
+    {{-- <section class="about-us section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-12">
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--/ End History 3 -->
 @endsection
 
