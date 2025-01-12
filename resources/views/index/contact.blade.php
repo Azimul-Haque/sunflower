@@ -15,7 +15,7 @@
                 <div class="col-12">
                     <h2>Contact</h2>
                     <ul class="bread-list">
-                        <li><a href="/">নীড় পাতা<i class="fa fa-angle-right"></i></a></li>
+                        <li><a href="/">Home<i class="fa fa-angle-right"></i></a></li>
                         <li class="active"><a href="#!">Contact</a></li>
                     </ul>
                 </div>
