@@ -120,7 +120,7 @@
                         <div class="single-widget newsletter useful-links">
                             <h2>BIAM Foundation</h2>
                             <ul>
-                                <li><a href="/"><i class="fa fa-angle-right"></i>Home</a></li>
+                                <li><a href="https://biam.gov.bd/"><i class="fa fa-angle-right"></i>Home</a></li>
                                 <li><a href="/about"><i class="fa fa-angle-right"></i>About us</a></li>
                                 <li><a href="/teachers"><i class="fa fa-angle-right"></i>Faculties</a></li>
                                 <li><a href="/notice"><i class="fa fa-angle-right"></i>Notices</a></li>
