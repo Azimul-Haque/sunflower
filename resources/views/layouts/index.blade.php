@@ -159,7 +159,7 @@
                                     <!-- End Social -->
                                     <!-- Copyright -->
                                     <div class="copyright">
-                                        <p>© Copyright Reserved {{ date('Y') }}. Developed by <a href="http://orbachinujbuk.com/" target="_blank">Innova Tech Inc.</a>.</p>
+                                        <p>© Copyright Reserved {{ date('Y') }}. Developed by <a href="https://www.innovatechbd.net/" target="_blank">Innova Tech Inc.</a>.</p>
                                     </div>
                                     <!--/ End Copyright -->
                                 </div>
