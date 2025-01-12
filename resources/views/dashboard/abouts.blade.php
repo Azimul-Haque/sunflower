@@ -100,7 +100,7 @@
             {!! Form::model($whoweare, ['route' => ['dashboard.updateabouts', $whoweare->id], 'method' => 'PUT']) !!}
               <div class="form-group">
                 <label>Text:</label>
-                {!! Form::textarea('text', str_replace('<br />', "", $whoweare->text), array('class' => 'form-control text-green textarea', 'required' => '', 'placeholder' => 'আমরা কারা লিখুন')) !!}
+                {!! Form::textarea('text', str_replace('<br />', "", $whoweare->text), array('class' => 'form-control text-green textarea', 'required' => '', 'placeholder' => 'Write brief history')) !!}
               </div>
             <button class="btn btn-success btn-sm" type="submit"><i class="fa fa-fw fa-floppy-o" aria-hidden="true"></i> Submit</button>
             {!! Form::close() !!}
@@ -110,7 +110,7 @@
         <div class="box box-success">
           <div class="box-header with-border text-green">
             <i class="fa fa-fw fa-file-text-o"></i>
-            <h3 class="box-title">At a Glance (এক নজরে)</h3>
+            <h3 class="box-title">At a Glance</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
