@@ -124,7 +124,7 @@
                                 <li><a href="https://drive.google.com/file/d/1bu_sUosPAThy6FZeNUjWrqE1ZVwbuxdC/view"><i class="fa fa-angle-right"></i>BIAM Schools</a></li>
                                 <li><a href="https://mopa.gov.bd/"><i class="fa fa-angle-right"></i>MoPA</a></li>
                                 <li><a href="https://cabinet.gov.bd/"><i class="fa fa-angle-right"></i>Cabinet Division</a></li>
-                                <li><a href="/contact"><i class="fa fa-angle-right"></i>DC Office, Narsingdi</a></li>
+                                <li><a href="https://www.narsingdi.gov.bd/"><i class="fa fa-angle-right"></i>DC Office, Narsingdi</a></li>
                             </ul>
                             {{-- <div class="mail">
                                 <p>Don't miss to  subscribe to our news feed, Get the latest updates from us!</p>
