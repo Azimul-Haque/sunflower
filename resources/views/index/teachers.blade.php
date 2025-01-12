@@ -13,10 +13,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>আমাদের অভিজ্ঞ শিক্ষকমণ্ডলী</h2>
+                    <h2>Our Awesome Teachers</h2>
                     <ul class="bread-list">
-                        <li><a href="/">নীড় পাতা<i class="fa fa-angle-right"></i></a></li>
-                        <li class="active"><a href="#!">শিক্ষকমণ্ডলীর তালিকা</a></li>
+                        <li><a href="/">Home<i class="fa fa-angle-right"></i></a></li>
+                        <li class="active"><a href="#!">Our Awesome Teachers</a></li>
                     </ul>
                 </div>
             </div>
