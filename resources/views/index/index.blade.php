@@ -169,7 +169,7 @@
     			<div class="col-12 wow zoomIn">
     				<div class="section-title">
     					<h2>Upcoming <span>Events</span></h2>
-    					<p>Mauris at varius orci. Vestibulum interdum felis eu nisl pulvinar, quis ultricies nibh. Sed ultricies ante vitae laoreet sagittis. In pellentesque viverra purus. Sed risus est, molestie nec hendrerit hendreri </p>
+    					<p>Stay tuned for exciting events at Narsingdi BIAM Zilla School & College, including academic competitions, cultural programs, and sports activities. Join us in celebrating learning, creativity, and talent!</p>
     				</div>
     			</div>
     		</div>
