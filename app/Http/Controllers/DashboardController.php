@@ -447,6 +447,7 @@ class DashboardController extends Controller
             'address'      => 'required',
             'contactno'    => 'required',
             'email'        => 'required',
+            'shorttext'        => 'required',
             'fb'           => 'sometimes',
             'twitter'      => 'sometimes',
             'ytube'        => 'sometimes',
@@ -457,6 +458,7 @@ class DashboardController extends Controller
         $basicinfo->address = $request->address;
         $basicinfo->contactno = $request->contactno;
         $basicinfo->email = $request->email;
+        $basicinfo->shorttext = $request->shorttext;
         $basicinfo->fb = $request->fb;
         $basicinfo->twitter = $request->twitter;
         $basicinfo->ytube = $request->ytube;
