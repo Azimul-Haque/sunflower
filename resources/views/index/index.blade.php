@@ -259,8 +259,8 @@
     				<!-- Single Fact -->
     				<div class="single-fact">
     					<i class="fa fa-graduation-cap"></i>
-    					<div class="number"><span class="counter">2000</span>+</div>
-    					<p>Passed Students</p>
+    					<div class="number"><span class="counter">100</span>%</div>
+    					<p>Pass Rate</p>
     				</div>
     				<!--/ End Single Fact -->
     			</div>
