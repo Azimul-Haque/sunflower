@@ -94,9 +94,9 @@
                             <div class="logo"><a href="#"><img src="/vendor/learnedu/images/logo2.png" alt="#"></a></div>
                             <p>Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Lorem ipsum dolor sit amet, consectetur</p>
                             <ul class="list">
-                                <li><i class="fa fa-phone"></i>Phone: +88 01719 541 589 </li>
+                                <li><i class="fa fa-phone"></i>Phone: {{ $sharedbasicinfo->contactno }}</li>
                                 <li><i class="fa fa-envelope"></i>Email: <a href="mailto:{{ $sharedbasicinfo->email }}">{{ $sharedbasicinfo->email }}</a></li>
-                                <li><i class="fa fa-map-o"></i>নেকমরদ, রানীশংকৈল, ঠাকুরগাঁও</li>
+                                <li><i class="fa fa-map-o"></i>{{ $sharedbasicinfo->address }}</li>
                             </ul>
                         </div>
                         <!--/ End About -->
