@@ -269,7 +269,7 @@
     				<div class="single-fact">
     					<i class="fa fa-trophy"></i>
     					<div class="number"><span class="counter">300</span>+</div>
-    					<p>Achievements</p>
+    					<p>10+ Awards Won</p>
     				</div>
     				<!--/ End Single Fact -->
     			</div>
