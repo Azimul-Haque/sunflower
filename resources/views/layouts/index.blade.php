@@ -4,7 +4,7 @@
 <head>
     <title>@yield('title') Narsingdi BIAM Zila School & College</title>
     <meta name="description" content="Narsingdi BIAM Zila School & College Copyright Reserved. Developed By Innova Tech Inc..">
-    <meta name="keywords" content="Narsingdi BIAM Zila School & College, KG School, Bangladesh, Nekmarad">
+    <meta name="keywords" content="Narsingdi BIAM Zila School & College, Narsingdi">
     <meta charset="utf-8">
     <meta name="author" content="Innova Tech Inc.">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
