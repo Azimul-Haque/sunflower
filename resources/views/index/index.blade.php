@@ -288,7 +288,7 @@
     <!--/ End Fun Facts -->
     
     <!-- Blogs -->
-    <section class="blog section">
+    {{-- <section class="blog section">
     	<div class="container">
     		<div class="row">
     			<div class="col-12">
@@ -459,7 +459,7 @@
     			</div>
     		</div>
     	</div>
-    </section>
+    </section> --}}
     <!--/ End Blogs -->
 @endsection
 
