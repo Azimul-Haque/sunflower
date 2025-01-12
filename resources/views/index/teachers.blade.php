@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    আমাদের অভিজ্ঞ শিক্ষকমণ্ডলী | সানফ্লাওয়ার কেজি অ্যান্ড প্রি-ক্যাডেট স্কুল
+    Our Awesome Teachers
 @endsection
 
 @section('css')
