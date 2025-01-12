@@ -278,7 +278,7 @@
     				<div class="single-fact">
     					<i class="fa fa-address-book-o"></i>
     					<div class="number"><span class="counter">25</span>+</div>
-    					<p>Experienced Faculties</p>
+    					<p>Expert Faculties</p>
     				</div>
     				<!--/ End Single Fact -->
     			</div>
