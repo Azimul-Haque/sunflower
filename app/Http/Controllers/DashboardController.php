@@ -413,7 +413,7 @@ class DashboardController extends Controller
     public function getAbouts()
     {
         $about = About::where('type', 'about')->get()->first();
-        $whoweare = About::where('type', 'whoweare')->get()->first();
+        $history = About::where('type', 'history')->get()->first();
         $whatwedo = About::where('type', 'whatwedo')->get()->first();
         $ataglance = About::where('type', 'ataglance')->get()->first();
         $mission = About::where('type', 'mission')->get()->first();
@@ -421,7 +421,7 @@ class DashboardController extends Controller
 
         return view('dashboard.abouts')
                     ->withAbout($about)
-                    ->withWhoweare($whoweare)
+                    ->withHistory($history)
                     ->withWhatwedo($whatwedo)
                     ->withAtaglance($ataglance)
                     ->withMission($mission)
