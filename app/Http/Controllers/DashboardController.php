@@ -983,7 +983,7 @@ class DashboardController extends Controller
         $testimonial->designation = $request->designation;
         $testimonial->message = $request->message;
 
-        // slider upload
+        // image upload
         if($request->hasFile('image')) {
             $image      = $request->file('image');
             $filename   = 'slider_' . time() .'.webp';
