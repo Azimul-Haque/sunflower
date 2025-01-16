@@ -41,6 +41,10 @@
                   <label>টাইটেল</label>
                   {!! Form::text('title', null, array('class' => 'form-control text-green', 'placeholder' => 'টাইটেল', 'required' => '', 'data-parsley-required-message' => 'টাইটেল আবশ্যক')) !!}
                 </div>
+                <div class="form-group">
+                  <label>সাব-টাইটেল</label>
+                  {!! Form::text('title', null, array('class' => 'form-control text-green', 'placeholder' => 'টাইটেল', 'required' => '', 'data-parsley-required-message' => 'টাইটেল আবশ্যক')) !!}
+                </div>
 
                 <center>
                   <img class="img-responsive" src="{{ asset('images/300x100.png')}}" id='img-upload' style="height: 100px; width: auto; padding: 5px;" />
