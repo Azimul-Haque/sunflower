@@ -61,7 +61,7 @@
           <div class="box box-warning">
             <div class="box-header with-border text-orange">
               <i class="fa fa-fw fa-trash"></i>
-              <h3 class="box-title">প্রশংসাবাক্য তালিকা</h3>
+              <h3 class="box-title">প্রশংসাবাক্য তালিকা (কমপক্ষে ২টি প্রশংসাবাক্য থাকা লাগবে)</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
