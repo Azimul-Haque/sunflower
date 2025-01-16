@@ -989,13 +989,13 @@ class DashboardController extends Controller
             $filename   = 'slider_' . time() .'.webp';
             $location   = public_path('/images/slider/'. $filename);
             Image::make($image)->fit(1185, 400)->save($location);
-            $slider->image = $filename;
+            $image->image = $filename;
         }
         
-        $slider->save();
+        $image->save();
         
-        Session::flash('success', 'সফলভাবে স্লাইডারের ছবি আপলোড করা হয়েছে!');
-        return redirect()->route('dashboard.slider');
+        Session::flash('success', 'সফলভাবে মন্তব্য যোগ করা হয়েছে!');
+        return redirect()->route('dashboard.testimonials');
     }
 
     public function deleteSlider($id)
