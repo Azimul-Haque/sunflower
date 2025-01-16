@@ -8,7 +8,7 @@
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
                             <div class="slider-text">
-                                <h1>{{ $slider->title }} <span>Education</span> & Courses Website</h1>
+                                <h1>{{ $slider->title }} <span>TEXT</span></h1>
                                 <p>Our mission is to empower clients, colleagues, and communities to achieve aspirations while building lasting, caring relationships.</p>
                                 <div class="button">
                                     <a href="courses.html" class="btn primary">Our Courses</a>
