@@ -3,9 +3,6 @@
     <div class="slider-active">
         @foreach($sliders as $slider)
             @php
-                // Generate a random number
-                $randomNumber = rand(1, 100);
-
                 // Generate a random alignment class
                 $alignmentClasses = ['left', 'center', 'right'];
                 $randomAlignment = $alignmentClasses[array_rand($alignmentClasses)];
