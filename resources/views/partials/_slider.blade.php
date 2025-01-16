@@ -22,7 +22,7 @@
         
 
 
-        {{-- <!-- Single Slider -->
+        <!-- Single Slider -->
         <div class="single-slider overlay" style="background-image:url('/images/slider/2.jpg')">
             <div class="container">
                 <div class="row">
@@ -75,7 +75,7 @@
                 </div>
             </div>
         </div>
-        <!--/ End Single Slider --> --}}
+        <!--/ End Single Slider -->
     </div>
 </section>
 <!--/ End Slider Area -->
