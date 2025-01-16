@@ -986,7 +986,7 @@ class DashboardController extends Controller
         // image upload
         if($request->hasFile('image')) {
             $image      = $request->file('image');
-            $filename   = 'slider_' . time() .'.webp';
+            $filename   = 'testimonial_person_' . time() .'.webp';
             $location   = public_path('/images/testimonials/'. $filename);
             Image::make($image)->fit(200, 200)->save($location);
             $image->image = $filename;
