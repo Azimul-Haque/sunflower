@@ -975,7 +975,7 @@ class DashboardController extends Controller
             'name'          =>   'required',
             'designation'       =>   'required',
             'message'       =>   'required',
-            'image'          =>   'sometimes|image|max:1000'
+            'image'          =>   'sometimes|image|max:500'
         ));
 
         $slider = new Slider;
