@@ -36,7 +36,7 @@
                 </div>
                 <div class="form-group">
                   <label>প্রশংসাবাক্য</label>
-                  {!! Form::textarea('subtitle', null, array('class' => 'form-control text-green', 'placeholder' => 'সাব-টাইটেল', 'required' => '', 'data-parsley-required-message' => 'পদবি আবশ্যক')) !!}
+                  {!! Form::textarea('message', null, array('class' => 'form-control text-green', 'placeholder' => 'সাব-টাইটেল', 'required' => '', 'data-parsley-required-message' => 'পদবি আবশ্যক')) !!}
                 </div>
 
 
