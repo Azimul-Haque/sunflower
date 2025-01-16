@@ -28,15 +28,15 @@
           <div class="box-body">
                 <div class="form-group">
                   <label>ব্যক্তির নাম</label>
-                  {!! Form::text('name', null, array('class' => 'form-control text-green', 'placeholder' => 'টাইটেল', 'required' => '', 'data-parsley-required-message' => 'নাম আবশ্যক')) !!}
+                  {!! Form::text('name', null, array('class' => 'form-control text-green', 'placeholder' => 'নাম', 'required' => '', 'data-parsley-required-message' => 'নাম আবশ্যক')) !!}
                 </div>
                 <div class="form-group">
                   <label>ডেসিগনেশন/পদবি</label>
-                  {!! Form::text('designation', null, array('class' => 'form-control text-green', 'placeholder' => 'সাব-টাইটেল', 'required' => '', 'data-parsley-required-message' => 'পদবি আবশ্যক')) !!}
+                  {!! Form::text('designation', null, array('class' => 'form-control text-green', 'placeholder' => 'পদবি', 'required' => '', 'data-parsley-required-message' => 'পদবি আবশ্যক')) !!}
                 </div>
                 <div class="form-group">
                   <label>প্রশংসাবাক্য</label>
-                  {!! Form::textarea('message', null, array('class' => 'form-control text-green', 'placeholder' => 'সাব-টাইটেল', 'required' => '', 'data-parsley-required-message' => 'প্রশংসাবাক্য আবশ্যক')) !!}
+                  {!! Form::textarea('message', null, array('class' => 'form-control text-green', 'placeholder' => 'প্রশংসাবাক্য', 'required' => '', 'data-parsley-required-message' => 'প্রশংসাবাক্য আবশ্যক')) !!}
                 </div>
 
 
