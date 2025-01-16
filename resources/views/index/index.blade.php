@@ -128,8 +128,7 @@
                                     {{ $testimonial->name }}<br/>
                                     <small class="name">{{ $testimonial->designation }}</small>
                                 </h4>
-                                
-                                <p>Nulla cursus a metus vel placerat. Fusce malesuada volutpat pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus velit libero, viverra quis euismod vel pellentesque at tortor. Donec</p>
+                                <p>{{ $testimonial->message }}</p>
                             </div>
                         </div>
                         @endforeach
