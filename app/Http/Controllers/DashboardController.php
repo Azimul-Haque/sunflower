@@ -804,6 +804,7 @@ class DashboardController extends Controller
 
         $slider = new Slider;
         $slider->title = $request->title;
+        $slider->subtitle = $request->subtitle;
 
         // slider upload
         if($request->hasFile('image')) {
