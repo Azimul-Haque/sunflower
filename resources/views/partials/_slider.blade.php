@@ -12,7 +12,7 @@
                                 <p>{{ $slider->subtitle }}</p>
                                 <div class="button">
                                     <a href="/teachers" class="btn primary">Our Teachers</a>
-                                    <a href="about.html" class="btn">Gallery</a>
+                                    <a href="/gallery" class="btn">Gallery</a>
                                 </div>
                             </div>
                         </div>
