@@ -170,9 +170,9 @@
               var imagewidth = this.width;
               var imageheight = this.height;
               filesize = parseInt((file.size / 1024));
-              if(filesize > 1000) {
+              if(filesize > 500) {
                 $("#image").val('');
-                toastr.warning('ফাইলের আকৃতি '+filesize+' কিলোবাইট. ১ মেগাবাইটের মধ্যে আপলোড করার চেস্টা করুন', 'WARNING').css('width', '400px;');
+                toastr.warning('ফাইলের আকৃতি '+filesize+' কিলোবাইট. ৫০০ কিলোবাইটের মধ্যে আপলোড করার চেস্টা করুন', 'WARNING').css('width', '400px;');
                 setTimeout(function() {
                   $("#img-upload").attr('src', '{{ asset('images/300x100.png') }}');
                 }, 1000);
