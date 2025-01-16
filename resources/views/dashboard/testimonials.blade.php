@@ -82,7 +82,7 @@
                     <img src="{{ asset('images/testimonials/'. $testimonial->image) }}" alt="Album Image" class="img-responsive" style="max-height: 200px; width: auto;">
                   </td>
                   <td>
-                    <a href="#" class="btn btn-sm btn-danger" title="ছবি মুছে ফেলুন" data-toggle="modal" data-target="#deleteTestimonialPhoto{{ $testimonial->id }}" data-backdrop="static"><i class="fa fa-trash"></i></a>
+                    <a href="#" class="btn btn-sm btn-danger" title="প্রশংসাবাক্য মুছে ফেলুন" data-toggle="modal" data-target="#deleteTestimonialPhoto{{ $testimonial->id }}" data-backdrop="static"><i class="fa fa-trash"></i></a>
                   </td>
                 </tr>
                 <!-- Delete Modal -->
@@ -92,10 +92,10 @@
                     <div class="modal-content">
                       <div class="modal-header modal-header-danger">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">ছবি মুছে ফেলুন</h4>
+                        <h4 class="modal-title">প্রশংসাবাক্য মুছে ফেলুন</h4>
                       </div>
                       <div class="modal-body">
-                        আপনি কি নিশ্চিতভাবে এই ছবিটি ডিলেট করতে চান?<br/><br/><br/>
+                        আপনি কি নিশ্চিতভাবে এই প্রশংসাবাক্যটি ডিলেট করতে চান?<br/><br/><br/>
                         <center>
                           <img src="{{ asset('images/testimonial/'. $testimonial->image) }}" alt="Album Image" class="img-responsive" style="max-height: 200px; width: auto;">
                           <small class="text-red"><b><i class="fa fa-info-circle"></i> এই ছবিটি মুছে দেওয়া হবে</b></small>
