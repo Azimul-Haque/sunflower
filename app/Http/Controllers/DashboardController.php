@@ -988,7 +988,7 @@ class DashboardController extends Controller
             $image      = $request->file('image');
             $filename   = 'slider_' . time() .'.webp';
             $location   = public_path('/images/slider/'. $filename);
-            Image::make($image)->fit(1185, 400)->save($location);
+            Image::make($image)->fit(, 400)->save($location);
             $image->image = $filename;
         }
         
