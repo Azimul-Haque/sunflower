@@ -1,7 +1,7 @@
 <!-- Slider Area -->
 <section class="home-slider">
     <div class="slider-active">
-        @foreach()
+        @foreach($sliders as $slider)
             <!-- Single Slider -->
             <div class="single-slider overlay" style="background-image:url('/images/slider/1.jpg')">
                 <div class="container">
