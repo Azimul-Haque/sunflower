@@ -27,7 +27,7 @@
           <!-- /.box-header -->
           <div class="box-body">
                 <div class="form-group">
-                  <label>টাইটেল</label>
+                  <label>ব্যক্তির নাম</label>
                   {!! Form::text('title', null, array('class' => 'form-control text-green', 'placeholder' => 'টাইটেল', 'required' => '', 'data-parsley-required-message' => 'টাইটেল আবশ্যক')) !!}
                 </div>
                 <div class="form-group">
