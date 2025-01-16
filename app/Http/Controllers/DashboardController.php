@@ -963,6 +963,74 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.editgallery', $albumphoto->album->id);
     }
 
+    public function getTestimonials()
+    {
+        $sliders = Slider::orderBy('id', 'desc')->paginate(10);
+        return view('dashboard.slider')->withSliders($sliders);
+    }
+
+    public function storeSlider(Request $request)
+    {
+        $this->validate($request,array(
+            'title'          =>   'required',
+            'subtitle'       =>   'required',
+            'image'          =>   'sometimes|image|max:1000'
+        ));
+
+        $slider = new Slider;
+        $slider->title = $request->title;
+        $slider->subtitle = $request->subtitle;
+
+        // slider upload
+        if($request->hasFile('image')) {
+            $image      = $request->file('image');
+            $filename   = 'slider_' . time() .'.webp';
+            $location   = public_path('/images/slider/'. $filename);
+            Image::make($image)->fit(1185, 400)->save($location);
+            $slider->image = $filename;
+        }
+        
+        $slider->save();
+        
+        Session::flash('success', 'সফলভাবে স্লাইডারের ছবি আপলোড করা হয়েছে!');
+        return redirect()->route('dashboard.slider');
+    }
+
+    public function deleteSlider($id)
+    {
+        $slider = Slider::find($id);
+        $image_path = public_path('images/slider/'. $slider->image);
+        if(File::exists($image_path)) {
+            File::delete($image_path);
+        }
+        $slider->delete();
+        
+        Session::flash('success', 'সফলভাবে মুছে ফেলা হয়েছে!');
+        return redirect()->route('dashboard.slider');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function getBlogs()
     {
         return view('dashboard.index');
