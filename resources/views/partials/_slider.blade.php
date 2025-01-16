@@ -12,7 +12,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
-                            <div class="slider-text">
+                            <div class="slider-text text-{{ $randomAlignment }}">
                                 <h1><span>BIAM</span> - {{ $slider->title }}</h1>
                                 <p>{{ $slider->subtitle }}</p>
                                 <div class="button">
