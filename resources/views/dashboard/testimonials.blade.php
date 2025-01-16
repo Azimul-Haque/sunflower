@@ -111,7 +111,7 @@
                         </center>
                       </div>
                       <div class="modal-footer">
-                        {!! Form::model($testimonial, ['route' => ['dashboard.delete.testimonial', $testimonial->id], 'method' => 'DELETE', 'class' => 'form-default', 'enctype' => 'multipart/form-data']) !!}
+                        {!! Form::model($testimonial, ['route' => ['dashboard.testimonials.delete', $testimonial->id], 'method' => 'DELETE', 'class' => 'form-default', 'enctype' => 'multipart/form-data']) !!}
                             {!! Form::submit('মুছে ফেলুন', array('class' => 'btn btn-danger')) !!}
                             <button type="button" class="btn btn-default" data-dismiss="modal">ফিরে যান</button>
                         {!! Form::close() !!}
