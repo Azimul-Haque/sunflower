@@ -66,7 +66,7 @@
             <!-- /.box-header -->
             <div class="box-body">
               <div class="row">
-                @foreach($sliders as $slider)
+                @foreach($testimonials as $slider)
                 <div class="col-md-4">
                   <div class="delete-img-box">
                       <img src="{{ asset('images/slider/'. $slider->image) }}" alt="Album Image" class="img-responsive">
