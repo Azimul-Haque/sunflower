@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Slider | ')
+@section('title', 'Testimonials | ')
 
 @section('css')
   {!!Html::style('css/parsley.css')!!}
