@@ -73,6 +73,11 @@
                   <th>ছবি</th>
                 </tr>
                 @foreach($testimonials as $testimonial)
+                <tr>
+                  <td>{{ $testimonial->name }}</td>
+                  <td>{{ $testimonial->designation }}</td>
+                  <td>{{ $testimonial->message }}</td>
+                </tr>
                 <div class="col-md-4">
                   <div class="delete-img-box">
                       <img src="{{ asset('images/testimonials/'. $testimonial->image) }}" alt="Person Image" class="img-responsive">
