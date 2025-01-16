@@ -972,8 +972,9 @@ class DashboardController extends Controller
     public function storeTestimonial(Request $request)
     {
         $this->validate($request,array(
-            'title'          =>   'required',
-            'subtitle'       =>   'required',
+            'name'          =>   'required',
+            'designation'       =>   'required',
+            'message'       =>   'required',
             'image'          =>   'sometimes|image|max:1000'
         ));
 
