@@ -17,7 +17,7 @@
 
 @section('content')
     <div class="row">
-      {!! Form::open(['route' => 'dashboard.storeslider', 'method' => 'POST', 'data-parsley-validate' => '', 'enctype' => 'multipart/form-data']) !!}
+      {!! Form::open(['route' => 'dashboard.testimonials.store', 'method' => 'POST', 'data-parsley-validate' => '', 'enctype' => 'multipart/form-data']) !!}
       <div class="col-md-4">
         <div class="box box-success">
           <div class="box-header with-border text-green">
