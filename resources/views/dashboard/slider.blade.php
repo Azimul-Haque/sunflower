@@ -99,7 +99,7 @@
                       <!-- Delete Photo Modal -->
                   </div>
                   <span>{{ $slider->title }}</span><br/>
-                  <small>{{ $slider->subtitle }}</small><br/><br/>
+                  <small style="color: gray;">{{ $slider->subtitle }}</small><br/><br/>
                 </div>
                 @endforeach
               </div>
