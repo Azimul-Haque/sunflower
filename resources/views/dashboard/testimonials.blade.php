@@ -66,8 +66,12 @@
             <!-- /.box-header -->
             <div class="box-body">
               <table class="table">
-                <td>sd</td>
-                <td>sd</td>
+                <tr>
+                  <th>নাম</th>
+                  <th>পদবি</th>
+                  <th>মন্তব্য</th>
+                  <th>ছবি</th>
+                </tr>
               </table>
             </div>
           </div>
