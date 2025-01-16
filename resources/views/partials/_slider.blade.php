@@ -11,7 +11,7 @@
                                 <h1>{{ $slider->title }} <span>TEXT</span></h1>
                                 <p>{{ $slider->subtitle }}</p>
                                 <div class="button">
-                                    <a href="courses.html" class="btn primary">Our Courses</a>
+                                    <a href="/teachers" class="btn primary">Our Teachers</a>
                                     <a href="about.html" class="btn">About Test</a>
                                 </div>
                             </div>
