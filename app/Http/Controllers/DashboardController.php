@@ -1000,15 +1000,15 @@ class DashboardController extends Controller
 
     public function deleteTestimonial($id)
     {
-        $slider = Slider::find($id);
-        $image_path = public_path('images/slider/'. $slider->image);
+        $testimonial = Testimonial::find($id);
+        $image_path = public_path('images/testimonial/'. $testimonial->image);
         if(File::exists($image_path)) {
             File::delete($image_path);
         }
-        $slider->delete();
+        $testimonial->delete();
         
         Session::flash('success', 'সফলভাবে মুছে ফেলা হয়েছে!');
-        return redirect()->route('dashboard.slider');
+        return redirect()->route('dashboard.testimonials');
     }
 
 
