@@ -66,7 +66,8 @@
             <!-- /.box-header -->
             <div class="box-body">
               <table class="table">
-                
+                <td>sd</td>
+                <td>sd</td>
               </table>
             </div>
           </div>
