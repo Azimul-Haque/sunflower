@@ -3,7 +3,7 @@
     <div class="slider-active">
         @foreach($sliders as $slider)
             <!-- Single Slider -->
-            <div class="single-slider overlay" style="background-image:url('/images/slider/1.jpg')">
+            <div class="single-slider overlay" style="background-image:url({{ asset('images/slider/' . $slider->image) }})">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
