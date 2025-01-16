@@ -978,7 +978,7 @@ class DashboardController extends Controller
             'image'         =>   'sometimes|image|max:500'
         ));
 
-        $testimonial = new Slider;
+        $testimonial = new Testimonial;
         $testimonial->name = $request->name;
         $testimonial->designation = $request->designation;
         $testimonial->message = $request->message;
