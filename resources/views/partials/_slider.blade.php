@@ -29,7 +29,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-12">
-                        <div class="slider-text text-center">
+                        <div class="slider-text text-right">
                             <h1>Creative Template for <span>Education</span> & Courses Website</h1>
                             <p>Our mission is to empower clients, colleagues, and communities to achieve aspirations while building lasting, caring relationships.</p>
                             <div class="button">
