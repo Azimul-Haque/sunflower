@@ -998,7 +998,7 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.testimonials');
     }
 
-    public function deleteSlider($id)
+    public function deleteTestimonial($id)
     {
         $slider = Slider::find($id);
         $image_path = public_path('images/slider/'. $slider->image);
