@@ -973,9 +973,9 @@ class DashboardController extends Controller
     {
         $this->validate($request,array(
             'name'          =>   'required',
-            'designation'       =>   'required',
+            'designation'   =>   'required',
             'message'       =>   'required',
-            'image'          =>   'sometimes|image|max:500'
+            'image'         =>   'sometimes|image|max:500'
         ));
 
         $slider = new Slider;
