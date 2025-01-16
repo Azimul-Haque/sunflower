@@ -11,7 +11,7 @@
             <div class="single-slider overlay" style="background-image:url({{ asset('images/slider/' . $slider->image) }})">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-md-8 col-12">
+                        <div class="col-lg-8 col-md-8 col-12 offset-lg-2 offset-md-2">
                             <div class="slider-text text-{{ $randomAlignment }}">
                                 <h1><span>BIAM</span> - {{ $slider->title }}</h1>
                                 <p>{{ $slider->subtitle }}</p>
