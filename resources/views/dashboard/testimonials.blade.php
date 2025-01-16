@@ -57,7 +57,7 @@
                   <img class="img-responsive" src="{{ asset('images/user.png')}}" id='img-upload' style="height: 100px; width: auto; padding: 5px;" />
                 </center>
 
-                <button class="btn btn-success btn-sm" type="submit"><i class="fa fa-fw fa-floppy-o" aria-hidden="true"></i> আপলোড করুন</button>
+                <button class="btn btn-success btn-sm" type="submit"><i class="fa fa-fw fa-floppy-o" aria-hidden="true"></i> দাখিল করুন</button>
             </div>
           </div>
           <!-- /.box-body -->
