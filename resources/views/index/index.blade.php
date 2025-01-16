@@ -126,7 +126,7 @@
                             <div class="main-content">
                                 <h4 class="name">
                                     {{ $testimonial->name }}<br/>
-                                    <span class="name">{{ $testimonial->designation }}</span>
+                                    <small class="name">{{ $testimonial->designation }}</small>
                                 </h4>
                                 
                                 <p>Nulla cursus a metus vel placerat. Fusce malesuada volutpat pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus velit libero, viverra quis euismod vel pellentesque at tortor. Donec</p>
