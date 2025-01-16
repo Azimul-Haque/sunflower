@@ -979,8 +979,9 @@ class DashboardController extends Controller
         ));
 
         $testimonial = new Slider;
-        $testimonial->title = $request->title;
-        $testimonial->subtitle = $request->subtitle;
+        $testimonial->name = $request->name;
+        $testimonial->designation = $request->designation;
+        $testimonial->message = $request->message;
 
         // slider upload
         if($request->hasFile('image')) {
