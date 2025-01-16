@@ -27,7 +27,7 @@
           <!-- /.box-header -->
           <div class="box-body">
                 <div class="form-group">
-                    <label>প্রশংসাবাক্য (দৈর্ঘ্য এবং প্রস্থের অনুপাত ১:৩ হওয়া বাঞ্ছনীয়):</label>
+                    <label>প্রশংসাবাক্য (দৈর্ঘ্য এবং প্রস্থের অনুপাত 1:1 হওয়া বাঞ্ছনীয়):</label>
                     <div class="input-group">
                         <span class="input-group-btn">
                             <span class="btn btn-default btn-file">
