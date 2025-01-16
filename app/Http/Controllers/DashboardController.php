@@ -978,9 +978,9 @@ class DashboardController extends Controller
             'image'         =>   'sometimes|image|max:500'
         ));
 
-        $slider = new Slider;
-        $slider->title = $request->title;
-        $slider->subtitle = $request->subtitle;
+        $testimonial = new Slider;
+        $testimonial->title = $request->title;
+        $testimonial->subtitle = $request->subtitle;
 
         // slider upload
         if($request->hasFile('image')) {
