@@ -53,7 +53,8 @@ class IndexController extends Controller
                     ->withSliders($sliders)
                     ->withAlbums($albums)
                     ->withNotices($notices)
-                    ->withEvents($events);
+                    ->withEvents($events)
+                    ->withTestimonials($testimonials);
     }
 
     public function getAbout()
