@@ -99,7 +99,7 @@
                         <center>
                           {{ $testimonial->name }}<br/>
                           {{ $testimonial->designation }}<br/>
-                          {{ $testimonial->message }}<br/>
+                          <small>{{ $testimonial->message }}</small><br/>
                           <img src="{{ asset('images/testimonial/'. $testimonial->image) }}" alt="Album Image" class="img-responsive" style="max-height: 200px; width: auto;">
                           <small class="text-red"><b><i class="fa fa-info-circle"></i> এই প্রশংসাবাক্যটি মুছে দেওয়া হবে</b></small>
                         </center>
