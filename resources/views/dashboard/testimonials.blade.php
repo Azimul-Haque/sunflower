@@ -72,6 +72,43 @@
                   <th>মন্তব্য</th>
                   <th>ছবি</th>
                 </tr>
+                @foreach($testimonials as $testimonial)
+                <div class="col-md-4">
+                  <div class="delete-img-box">
+                      <img src="{{ asset('images/testimonials/'. $testimonial->image) }}" alt="Album Image" class="img-responsive">
+                      <a href="#" class="btn btn-sm btn-danger" title="ছবি মুছে ফেলুন" data-toggle="modal" data-target="#deletetestimonialPhoto{{ $testimonial->id }}" data-backdrop="static"><i class="fa fa-trash"></i></a>
+                      <!-- Delete Photo Modal -->
+                      <!-- Delete Photo Modal -->
+                      <div class="modal fade" id="deletetestimonialPhoto{{ $testimonial->id }}" role="dialog">
+                        <div class="modal-dialog modal-md">
+                          <div class="modal-content">
+                            <div class="modal-header modal-header-danger">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">ছবি মুছে ফেলুন</h4>
+                            </div>
+                            <div class="modal-body">
+                              আপনি কি নিশ্চিতভাবে এই ছবিটি ডিলেট করতে চান?<br/><br/><br/>
+                              <center>
+                                <img src="{{ asset('images/testimonial/'. $testimonial->image) }}" alt="Album Image" class="img-responsive" style="max-height: 200px; width: auto;">
+                                <small class="text-red"><b><i class="fa fa-info-circle"></i> এই ছবিটি মুছে দেওয়া হবে</b></small>
+                              </center>
+                            </div>
+                            <div class="modal-footer">
+                              {!! Form::model($testimonial, ['route' => ['dashboard.deletetestimonial', $testimonial->id], 'method' => 'DELETE', 'class' => 'form-default', 'enctype' => 'multipart/form-data']) !!}
+                                  {!! Form::submit('মুছে ফেলুন', array('class' => 'btn btn-danger')) !!}
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">ফিরে যান</button>
+                              {!! Form::close() !!}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Delete Photo Modal -->
+                      <!-- Delete Photo Modal -->
+                  </div>
+                  <span>{{ $testimonial->title }}</span><br/>
+                  <small style="color: gray;">{{ $testimonial->subtitle }}</small><br/><br/>
+                </div>
+                @endforeach
               </table>
             </div>
           </div>
