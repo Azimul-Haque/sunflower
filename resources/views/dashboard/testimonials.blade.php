@@ -83,7 +83,7 @@
                 <tr>
                   <td>{{ $testimonial->name }}</td>
                   <td>{{ $testimonial->designation }}</td>
-                  <td>{{ $testimonial->message }}</td>
+                  <td width="35%">{{ $testimonial->message }}</td>
                   <td>
                     <img src="{{ asset('images/testimonials/'. $testimonial->image) }}" alt="Album Image" class="img-responsive" style="max-height: 200px; width: auto;">
                   </td>
