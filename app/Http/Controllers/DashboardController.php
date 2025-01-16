@@ -798,6 +798,7 @@ class DashboardController extends Controller
     {
         $this->validate($request,array(
             'title'          =>   'required',
+            'subtitle'       =>   'required',
             'image'          =>   'sometimes|image|max:1000'
         ));
 
