@@ -75,7 +75,7 @@
                 @foreach($testimonials as $testimonial)
                 <div class="col-md-4">
                   <div class="delete-img-box">
-                      <img src="{{ asset('images/testimonials/'. $testimonial->image) }}" alt="Album Image" class="img-responsive">
+                      <img src="{{ asset('images/testimonials/'. $testimonial->image) }}" alt="Person Image" class="img-responsive">
                       <a href="#" class="btn btn-sm btn-danger" title="ছবি মুছে ফেলুন" data-toggle="modal" data-target="#deletetestimonialPhoto{{ $testimonial->id }}" data-backdrop="static"><i class="fa fa-trash"></i></a>
                       <!-- Delete Photo Modal -->
                       <!-- Delete Photo Modal -->
