@@ -126,6 +126,11 @@ Route::get('/dashboard/slider', ['as'=>'dashboard.slider','uses'=>'DashboardCont
 Route::post('/dashboard/slider/store', ['as'=>'dashboard.storeslider','uses'=>'DashboardController@storeSlider']);
 Route::delete('/dashboard/slider/{id}/delete', ['as'=>'dashboard.deleteslider','uses'=>'DashboardController@deleteSlider']);
 
+// TESTIMONIALS
+Route::get('/dashboard/testimonials', ['as'=>'dashboard.testimonials','uses'=>'DashboardController@getTestimonials']);
+Route::post('/dashboard/testimonials/store', ['as'=>'dashboard.storeslider','uses'=>'DashboardController@storeSlider']);
+Route::delete('/dashboard/testimonials/{id}/delete', ['as'=>'dashboard.deleteslider','uses'=>'DashboardController@deleteSlider']);
+
 // GALLERY
 Route::get('/dashboard/gallery', ['as'=>'dashboard.gallery','uses'=>'DashboardController@getGallery']);
 Route::get('/dashboard/gallery/create', ['as'=>'dashboard.creategallery','uses'=>'DashboardController@getCreateGallery']);
