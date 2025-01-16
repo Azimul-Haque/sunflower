@@ -98,7 +98,7 @@
                       <!-- Delete Photo Modal -->
                       <!-- Delete Photo Modal -->
                   </div>
-                  <small>{{ $slider->title }}</small><br/><br/>
+                  <small>{{ $slider->title }}</small><br/>
                   <small>{{ $slider->subtitle }}</small><br/><br/>
                 </div>
                 @endforeach
