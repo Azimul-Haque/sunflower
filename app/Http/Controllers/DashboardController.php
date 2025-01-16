@@ -1001,7 +1001,7 @@ class DashboardController extends Controller
     public function deleteTestimonial($id)
     {
         $testimonial = Testimonial::find($id);
-        $image_path = public_path('images/testimonial/'. $testimonial->image);
+        $image_path = public_path('images/testimonials/'. $testimonial->image);
         if(File::exists($image_path)) {
             File::delete($image_path);
         }
