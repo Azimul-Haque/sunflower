@@ -115,16 +115,6 @@
                 </div>
                 <!-- Delete Modal -->
                 <!-- Delete Modal -->
-
-                <div class="col-md-4">
-                  <div class="delete-img-box">
-                      <img src="{{ asset('images/testimonials/'. $testimonial->image) }}" alt="Person Image" class="img-responsive">
-                      
-                      
-                  </div>
-                  <span>{{ $testimonial->title }}</span><br/>
-                  <small style="color: gray;">{{ $testimonial->subtitle }}</small><br/><br/>
-                </div>
                 @endforeach
               </table>
             </div>
