@@ -71,6 +71,7 @@
                   <th>পদবি</th>
                   <th>মন্তব্য</th>
                   <th>ছবি</th>
+                  <th>কার্যক্রম</th>
                 </tr>
                 @foreach($testimonials as $testimonial)
                 <tr>
