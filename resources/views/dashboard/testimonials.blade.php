@@ -34,6 +34,12 @@
                   <label>ডেসিগনেশন/পদবি</label>
                   {!! Form::text('subtitle', null, array('class' => 'form-control text-green', 'placeholder' => 'সাব-টাইটেল', 'required' => '', 'data-parsley-required-message' => 'পদবি আবশ্যক')) !!}
                 </div>
+                <div class="form-group">
+                  <label>প্রশংসাবাক্য</label>
+                  {!! Form::textarea('subtitle', null, array('class' => 'form-control text-green', 'placeholder' => 'সাব-টাইটেল', 'required' => '', 'data-parsley-required-message' => 'পদবি আবশ্যক')) !!}
+                </div>
+
+
 
                 <div class="form-group">
                     <label>প্রশংসাবাক্য (দৈর্ঘ্য এবং প্রস্থের অনুপাত 1:1 হওয়া বাঞ্ছনীয়):</label>
