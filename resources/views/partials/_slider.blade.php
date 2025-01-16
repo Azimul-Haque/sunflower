@@ -8,7 +8,7 @@
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
                             <div class="slider-text">
-                                <h1>{{ $slider->title }} <span>TEXT</span></h1>
+                                <h1><span>TEXT</span> - {{ $slider->title }}</h1>
                                 <p>{{ $slider->subtitle }}</p>
                                 <div class="button">
                                     <a href="/teachers" class="btn primary">Our Teachers</a>
