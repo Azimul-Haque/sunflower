@@ -60,7 +60,7 @@
           <div class="box box-warning">
             <div class="box-header with-border text-orange">
               <i class="fa fa-fw fa-trash"></i>
-              <h3 class="box-title">ছবি অপসারণ করুন</h3>
+              <h3 class="box-title">স্লাইডারের ছবি তালিকা (কমপক্ষে ২টি ছবি থাকা লাগবে)</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
