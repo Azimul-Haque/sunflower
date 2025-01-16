@@ -85,8 +85,8 @@
                     <a href="#" class="btn btn-sm btn-danger" title="ছবি মুছে ফেলুন" data-toggle="modal" data-target="#deleteTestimonialPhoto{{ $testimonial->id }}" data-backdrop="static"><i class="fa fa-trash"></i></a>
                   </td>
                 </tr>
-                <!-- Delete Photo Modal -->
-                <!-- Delete Photo Modal -->
+                <!-- Delete Modal -->
+                <!-- Delete Modal -->
                 <div class="modal fade" id="deleteTestimonialPhoto{{ $testimonial->id }}" role="dialog">
                   <div class="modal-dialog modal-md">
                     <div class="modal-content">
@@ -110,8 +110,9 @@
                     </div>
                   </div>
                 </div>
-                <!-- Delete Photo Modal -->
-                <!-- Delete Photo Modal -->
+                <!-- Delete Modal -->
+                <!-- Delete Modal -->
+
                 <div class="col-md-4">
                   <div class="delete-img-box">
                       <img src="{{ asset('images/testimonials/'. $testimonial->image) }}" alt="Person Image" class="img-responsive">
