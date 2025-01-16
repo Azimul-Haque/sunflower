@@ -989,10 +989,10 @@ class DashboardController extends Controller
             $filename   = 'testimonial_person_' . time() .'.webp';
             $location   = public_path('/images/testimonials/'. $filename);
             Image::make($image)->fit(200, 200)->save($location);
-            $image->image = $filename;
+            $testimonial->image = $filename;
         }
         
-        $image->save();
+        $testimonial->save();
         
         Session::flash('success', 'সফলভাবে মন্তব্য যোগ করা হয়েছে!');
         return redirect()->route('dashboard.testimonials');
