@@ -22,12 +22,12 @@
         <div class="box box-success">
           <div class="box-header with-border text-green">
             <i class="fa fa-fw fa-upload"></i>
-            <h3 class="box-title">ছবি আপলোড করুন</h3>
+            <h3 class="box-title">প্রশংসাবাক্য আপলোড করুন</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
                 <div class="form-group">
-                    <label>ছবি (দৈর্ঘ্য এবং প্রস্থের অনুপাত ১:৩ হওয়া বাঞ্ছনীয়):</label>
+                    <label>প্রশংসাবাক্য (দৈর্ঘ্য এবং প্রস্থের অনুপাত ১:৩ হওয়া বাঞ্ছনীয়):</label>
                     <div class="input-group">
                         <span class="input-group-btn">
                             <span class="btn btn-default btn-file">
