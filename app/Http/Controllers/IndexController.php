@@ -46,7 +46,7 @@ class IndexController extends Controller
         $albums = Album::orderBy('id', 'DESC')->get()->take(4);
         $notices = Notice::orderBy('id', 'DESC')->get()->take(4);
         $events = Event::orderBy('id', 'DESC')->get()->take(4);
-        $testimonials = Testimonial::orderBy('id', 'DESC')->get()->take(4);
+        $testimonials = Testimonial::orderBy('id', 'DESC')->get();
 
         return view('index.index')
                     ->withAbout($about)
