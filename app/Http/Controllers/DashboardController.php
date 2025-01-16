@@ -811,7 +811,7 @@ class DashboardController extends Controller
             $image      = $request->file('image');
             $filename   = 'slider_' . time() .'.' . $image->getClientOriginalExtension();
             $location   = public_path('/images/slider/'. $filename);
-            Image::make($image)->resize(1185, 400)->save($location);
+            Image::make($image)->fit(1185, 400)->save($location);
             $slider->image = $filename;
         }
         
