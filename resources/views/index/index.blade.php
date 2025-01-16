@@ -125,7 +125,7 @@
                             <img src="{{ asset('images/testimonials/' . $testimonial->image) }}" alt="#">
                             <div class="main-content">
                                 <h4 class="name">{{ $testimonial->name }}</h4>
-                                <h6 class="name">{{ $testimonial->designation }}</h6>
+                                <span class="name">{{ $testimonial->designation }}</span>
                                 <p>Nulla cursus a metus vel placerat. Fusce malesuada volutpat pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus velit libero, viverra quis euismod vel pellentesque at tortor. Donec</p>
                             </div>
                         </div>
