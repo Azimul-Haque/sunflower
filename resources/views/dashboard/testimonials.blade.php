@@ -31,7 +31,7 @@
                   {!! Form::text('title', null, array('class' => 'form-control text-green', 'placeholder' => 'টাইটেল', 'required' => '', 'data-parsley-required-message' => 'টাইটেল আবশ্যক')) !!}
                 </div>
                 <div class="form-group">
-                  <label>সাব-টাইটেল</label>
+                  <label>ডেসিগনেশন/পদবি</label>
                   {!! Form::text('subtitle', null, array('class' => 'form-control text-green', 'placeholder' => 'সাব-টাইটেল', 'required' => '', 'data-parsley-required-message' => 'সাব-টাইটেল আবশ্যক')) !!}
                 </div>
 
