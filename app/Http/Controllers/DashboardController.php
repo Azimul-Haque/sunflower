@@ -965,7 +965,7 @@ class DashboardController extends Controller
 
     public function getTestimonials()
     {
-        $sliders = Slider::orderBy('id', 'desc')->paginate(10);
+        $testimonials = Testimonial::orderBy('id', 'desc')->paginate(10);
         return view('dashboard.testimonials')->withSliders($sliders);
     }
 
