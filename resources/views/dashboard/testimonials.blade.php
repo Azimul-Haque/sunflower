@@ -97,6 +97,9 @@
                       <div class="modal-body">
                         আপনি কি নিশ্চিতভাবে এই প্রশংসাবাক্যটি ডিলেট করতে চান?<br/><br/><br/>
                         <center>
+                          {{ $testimonial->name }}<br/>
+                          {{ $testimonial->designation }}<br/>
+                          {{ $testimonial->message }}<br/>
                           <img src="{{ asset('images/testimonial/'. $testimonial->image) }}" alt="Album Image" class="img-responsive" style="max-height: 200px; width: auto;">
                           <small class="text-red"><b><i class="fa fa-info-circle"></i> এই প্রশংসাবাক্যটি মুছে দেওয়া হবে</b></small>
                         </center>
