@@ -10,7 +10,7 @@
     <h1>
       <i class="fa fa-fw fa-plus" aria-hidden="true"></i> মন্তব্য/ প্রশংসাবাক্য
       <div class="pull-right">
-        <a class="btn btn-info" href="#!" title="হোমপেইজে লোড প্রেশার কম রাখবার জন্য, স্লাইডারে ৩ থেকে ৫টি ছবির মাঝে সীমাবদ্ধ থাকা সমীচীন" data-placement="bottom"><i class="fa fa-info-circle"></i></a>
+        <a class="btn btn-info" href="#!" title="হোমপেইজে লোড প্রেশার কম রাখবার জন্য, প্রশংসাবাক্য ৩ থেকে ৫টি ছবির মাঝে সীমাবদ্ধ থাকা সমীচীন" data-placement="bottom"><i class="fa fa-info-circle"></i></a>
       </div>
     </h1>
 @stop
