@@ -2,6 +2,14 @@
 <section class="home-slider">
     <div class="slider-active">
         @foreach($sliders as $slider)
+            @php
+                        // Generate a random number
+                        $randomNumber = rand(1, 100);
+
+                        // Generate a random alignment class
+                        $alignmentClasses = ['left', 'center', 'right'];
+                        $randomAlignment = $alignmentClasses[array_rand($alignmentClasses)];
+                    @endphp
             <!-- Single Slider -->
             <div class="single-slider overlay" style="background-image:url({{ asset('images/slider/' . $slider->image) }})">
                 <div class="container">
