@@ -966,10 +966,10 @@ class DashboardController extends Controller
     public function getTestimonials()
     {
         $testimonials = Testimonial::orderBy('id', 'desc')->paginate(10);
-        return view('dashboard.testimonials')->withSliders($sliders);
+        return view('dashboard.testimonials')->withTestimonials($testimonials);
     }
 
-    public function storeSlider(Request $request)
+    public function storeTestimonial(Request $request)
     {
         $this->validate($request,array(
             'title'          =>   'required',
