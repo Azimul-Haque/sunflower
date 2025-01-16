@@ -27,6 +27,15 @@
           <!-- /.box-header -->
           <div class="box-body">
                 <div class="form-group">
+                  <label>টাইটেল</label>
+                  {!! Form::text('title', null, array('class' => 'form-control text-green', 'placeholder' => 'টাইটেল', 'required' => '', 'data-parsley-required-message' => 'টাইটেল আবশ্যক')) !!}
+                </div>
+                <div class="form-group">
+                  <label>সাব-টাইটেল</label>
+                  {!! Form::text('subtitle', null, array('class' => 'form-control text-green', 'placeholder' => 'সাব-টাইটেল', 'required' => '', 'data-parsley-required-message' => 'সাব-টাইটেল আবশ্যক')) !!}
+                </div>
+
+                <div class="form-group">
                     <label>প্রশংসাবাক্য (দৈর্ঘ্য এবং প্রস্থের অনুপাত 1:1 হওয়া বাঞ্ছনীয়):</label>
                     <div class="input-group">
                         <span class="input-group-btn">
@@ -36,14 +45,6 @@
                         </span>
                         <input type="text" class="form-control text-green" readonly>
                     </div>
-                </div>
-                <div class="form-group">
-                  <label>টাইটেল</label>
-                  {!! Form::text('title', null, array('class' => 'form-control text-green', 'placeholder' => 'টাইটেল', 'required' => '', 'data-parsley-required-message' => 'টাইটেল আবশ্যক')) !!}
-                </div>
-                <div class="form-group">
-                  <label>সাব-টাইটেল</label>
-                  {!! Form::text('subtitle', null, array('class' => 'form-control text-green', 'placeholder' => 'সাব-টাইটেল', 'required' => '', 'data-parsley-required-message' => 'সাব-টাইটেল আবশ্যক')) !!}
                 </div>
 
                 <center>
