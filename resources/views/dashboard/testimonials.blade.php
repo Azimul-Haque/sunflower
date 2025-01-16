@@ -189,7 +189,7 @@
               $("#image").val('');
               toastr.warning('অনুগ্রহ করে ছবি সিলেক্ট করুন!', 'WARNING').css('width', '400px;');
               setTimeout(function() {
-                $("#img-upload").attr('src', '{{ asset('images/300x100.png') }}');
+                $("#img-upload").attr('src', '{{ asset('images/user.png') }}');
               }, 1000);
             };
             img.src = _URL.createObjectURL(file);
