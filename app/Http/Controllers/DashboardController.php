@@ -809,7 +809,7 @@ class DashboardController extends Controller
         // slider upload
         if($request->hasFile('image')) {
             $image      = $request->file('image');
-            $filename   = 'slider_' . time() .'.' . webp;
+            $filename   = 'slider_' . time() .'.webp';
             $location   = public_path('/images/slider/'. $filename);
             Image::make($image)->fit(1185, 400)->save($location);
             $slider->image = $filename;
