@@ -16,6 +16,7 @@ use App\Basicinfo;
 use App\Formmessage;
 use App\Faq;
 use App\Staff;
+use App\Testimonial;
 
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
